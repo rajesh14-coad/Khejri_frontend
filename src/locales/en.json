@@ -1,0 +1,442 @@
+{
+    "menu": {
+        "home": "Home",
+        "history": "History & Legacy",
+        "report": "Report Incident",
+        "news": "Community News",
+        "admin": "Admin Dashboard",
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Join Movement",
+        "dhams": "Sacred Dhams",
+        "rules": "29 Rules",
+        "sabadwani": "Sabadwani"
+    },
+    "rulesPage": {
+        "title": "The 29 Principles",
+        "subtitle": "\"Unattis Dharm Ki Akhri\" - The code of conduct for a harmonious life.",
+        "categories": {
+            "Health & Hygiene": "Health & Hygiene",
+            "Social Ethics": "Social Ethics",
+            "Environment": "Environment",
+            "Spirituality": "Spirituality",
+            "Diet & Lifestyle": "Diet & Lifestyle"
+        },
+        "labels": {
+            "back": "Back to 29 Rules",
+            "ruleNum": "Rule #",
+            "traditional": "Traditional Name",
+            "modern": "Modern Significance",
+            "scientific": "Scientific Backing",
+            "analysis": "Deep Analysis"
+        }
+    },
+    "hero": {
+        "title": "Guardians of Nature",
+        "subtitle": "Discover the 550+ year legacy of the Bishnoi community — the world's first fearless environmentalists.",
+        "explore": "Explore History",
+        "liveMap": "Live Map"
+    },
+    "home": {
+        "communityUpdates": "Community Updates",
+        "latestChronicles": "Latest Chronicles",
+        "viewArchive": "View Archive",
+        "corePhilosophy": "Core Philosophy",
+        "founderTitle": "The Visionary",
+        "founderDesc": "He who knows the eternal nature of the soul and protects the environment as a divine duty is a true Bishnoi.",
+        "readBio": "Read Biography",
+        "rulesTitle": "The 29 Principles",
+        "rulesDesc": "Explore the code of conduct that created a harmonious coexistence between humans and nature centuries ago.",
+        "viewRules": "View Rules",
+        "sabadTitle": "120 Sabadwani",
+        "sabadDesc": "The divine poetic constitution. Read the 120 hymns spoken by Guru Jambheshwar that guide the Bishnoi way of life.",
+        "readScripture": "Read Scripture",
+        "historyTitle": "Khejarli Massacre",
+        "historyDesc": "The supreme sacrifice of 1730 AD. How 363 brave souls laid down their lives to save trees.",
+        "witnessHistory": "Witness History",
+        "philosophyQuoteMeaning": "(If a head is sacrificed to save a tree, know it to be a cheap bargain.)",
+        "philosophyDesc": "This powerful statement by Amrita Devi Bishnoi defines the community's ethos. It is not just environmentalism; it is a spiritual commitment where nature is revered as divine.",
+        "readAmritaStory": "Read Amrita Devi's Story",
+        "founderLongDesc": "Born in 1451 AD in Pipasar, Guru Jambheshwar was a revolutionary saint who merged spirituality with environmental science. He gave 29 simple rules for a healthy, sustainable, and non-violent life.",
+        "est": "Est. 1485 AD",
+        "carousel": {
+            "rule22": {
+                "title": "Jeev Daya Palani",
+                "desc": "Compassion for all living beings is the core duty."
+            },
+            "rule29": {
+                "title": "Runkh Lila Nahi Ghave",
+                "desc": "Do not cut green trees."
+            },
+            "rule1": {
+                "title": "Tees Din Sutak",
+                "desc": "Maintain hygiene and isolation for mother & child."
+            }
+        }
+    },
+    "rulesData": {
+        "rule-1": {
+            "title": "Tees Din Sutak (30 Days Retreat)",
+            "shortDesc": "Observe retreat for 30 days after childbirth.",
+            "traditional": "Tees Din Sutak",
+            "significance": "Maternal Health & Infection Control",
+            "modernView": "Post-partum Quarantine / Recovery Period",
+            "description": "The mother and newborn must remain in a clean, isolated environment for 30 days after birth. No outsider is allowed to touch them.",
+            "scientificBacking": "In the 15th century, infant mortality due to infections was high. Isolating the mother and child acted as a quarantine, protecting the newborn's developing immune system from external pathogens.",
+            "deepAnalysis": "### The Science of Sutak: Ancient Quarantine\n\n**1. Immunological Shielding**\nThe first rule of the Bishnoi code addresses the most critical period of human life: the neonatal phase. In an era without antibiotics or vaccines, the \"Sutak\" (impurity/segregation) period was effectively a bio-bubble. By restricting access to the mother and child for 30 days, Guru Jambheshwar minimized the risk of handling-induced infections (like sepsis).\n\n**2. Maternal Recovery**\nChildbirth is physically traumatic. The mandatory isolation meant the mother was excused from all household chores—cooking, fetching water, or working in the fields. This provided a guaranteed period of rest, crucial for preventing uterine prolapse and ensuring successful lactation.\n\n**3. Psychological Bonding**\nThe isolation created an undisturbed space for the mother-child bond to develop, essential for oxytocin release and breastfeeding success."
+        },
+        "rule-2": {
+            "title": "Paanch Din Rituvanti (5 Days Segregation)",
+            "shortDesc": "Observe 5-day segregation during menstruation.",
+            "traditional": "Paanch Din Rituvanti Nyaro",
+            "significance": "Women's Rest & Hygiene",
+            "modernView": "Menstrual Leave / Health Break",
+            "description": "Women are exempted from all work and religious duties for 5 days during menstruation.",
+            "scientificBacking": "This rule was primarily about rest. In an agrarian society where women performed heavy manual labor, this rule provided a mandatory monthly break to recover from menstrual fatigue.",
+            "deepAnalysis": "### Rethinking Menstrual Taboos\n\n**1. The Economics of Rest**\nWhile modern lenses often view menstrual segregation as discriminatory, in the context of 15th-century peasant life, it was a relief measure. Bishnoi women were the backbone of the household economy. Without a religious mandate, they would never be granted \"sick leave.\" By codifying it as a religious rule, Guru Jambheshwar ensured that men *had* to take over household duties for these 5 days.\n\n**2. Hygiene Management**\nWithout modern sanitary products, managing hygiene while working in the fields was difficult and prone to infection. Staying at home allowed for better personal care."
+        },
+        "rule-3": {
+            "title": "Saere Snan (Daily Morning Bath)",
+            "shortDesc": "Bathe daily early in the morning.",
+            "traditional": "Saere Snan",
+            "significance": "Personal Hygiene & Discipline",
+            "modernView": "Circadian Rhythm Regulation",
+            "description": "One must bathe every morning before sunrise.",
+            "scientificBacking": "Waking up before sunrise (Brahma Muhurta) regulates the body clock. Cold water baths boost circulation and immunity.",
+            "deepAnalysis": "### The Discipline of the Dawn\n\n**1. Hydrotherapy**\nDaily bathing in the harsh desert environment of Rajasthan was not just about cleaning dirt; it was a ritual of awakening. The shock of cold water activates the sympathetic nervous system, increasing alertness and metabolic rate.\n\n**2. Symbolism**\nExternal cleanliness is seen as a prerequisite for internal purity. One cannot meditate with a lethargic body. This rule sets the tone for the entire day—starting with discipline."
+        },
+        "rule-4": {
+            "title": "Sheel Santosh (Good Character)",
+            "shortDesc": "Maintain good character and be content.",
+            "traditional": "Sheel Santosh",
+            "significance": "Mental Health",
+            "modernView": "Stress Management / Stoicism",
+            "description": "Practice modesty, integrity, and contentment with what you have.",
+            "scientificBacking": "Chronic stress and envy release cortisol, damaging health. Contentment (Santosh) is a psychological buffer against anxiety.",
+            "deepAnalysis": "### The Psychology of Contentment\n\n**1. The Anti-Consumerist Stance**\nIn a world driven by accumulation, this rule teaches the value of \"enough.\" A contented mind consumes less, clutters less, and destroys less. This connects directly to environmental sustainability—greed is the root of exploitation.\n\n**2. Integrity (Sheel)**\nGood character is the social capital of the community. It builds trust, reducing social friction and conflict."
+        },
+        "rule-5": {
+            "title": "Shuddh Jal, Dudh, Indhan (Filtration)",
+            "shortDesc": "Filter water, milk, and firewood.",
+            "traditional": "Dwi-Kaliyo",
+            "significance": "Hygiene & Non-Violence",
+            "modernView": "Micro-organism Protection",
+            "description": "Water and milk must be filtered before consumption. Firewood must be checked for insects before burning.",
+            "scientificBacking": "Filtering water prevents water-borne diseases (Guineaworm was common). Checking firewood prevents the accidental killing of ants/insects.",
+            "deepAnalysis": "### The Micro-Ethics of Filtration\n\n**1. Preventive Health**\nFiltering water with a cloth was the most effective way to remove particulate matter and macro-parasites in pre-modern times. It saved the community from debilitating diseases.\n\n**2. Ahimsa in Action**\nThe rule extends non-violence to the invisible. Checking firewood (Indhan) ensures that one does not accidentally burn a colony of ants or insects hidden in the wood. It teaches mindfulness—every action, even lighting a fire, requires attention to life."
+        },
+        "rule-6": {
+            "title": "Havan (Fire Offering)",
+            "shortDesc": "Perform Havan daily with pure ghee and coconut.",
+            "traditional": "Havan",
+            "significance": "Air Purification & Spiritual Focus",
+            "modernView": "Aromatherapy / Ritual Discipline",
+            "description": "Perform the fire ritual daily to purify the atmosphere and the mind.",
+            "scientificBacking": "Burning pure ghee and wood produces volatile oils that can reduce airborne bacteria (fumigation effect).",
+            "deepAnalysis": "### The Ritual of Fire\n\n**1. Atmospheric Purification**\nThe daily Havan uses specific ingredients known for their antimicrobial properties when combusted. In a contained village environment, this acted as a community fumigation practice.\n\n**2. Focus and Meditation**\nThe act of tending to the fire requires concentration. It serves as a daily meditation practice, centering the mind before the day's labor begins."
+        },
+        "rule-7": {
+            "title": "Gayatri Mantra",
+            "shortDesc": "Recite the holy mantra daily.",
+            "traditional": "Gayatri Mantra / Vishnu Jaap",
+            "significance": "Mental Clarity",
+            "modernView": "Cognitive Focus / Mantra Meditation",
+            "description": "Recitation of sacred sounds to invoke wisdom.",
+            "scientificBacking": "Chanting regulates breathing (Pranayama) and reduces stress levels through vagus nerve stimulation.",
+            "deepAnalysis": "### The Power of Sound\n\n**1. Neuro-Linguistic Effect**\nRepetitive chanting (Japa) has been shown to induce theta brainwave states, promoting deep relaxation and creativity.\n\n**2. Cultural Continuity**\nBy prescribing a specific mantra, Guru Jambheshwar linked his followers to the broader Vedic tradition while maintaining their distinct identity."
+        },
+        "rule-8": {
+            "title": "Indhan Binnao (Check Fuel)",
+            "shortDesc": "Filter firewood to ensure no life is burnt.",
+            "traditional": "Indhan Binnao",
+            "significance": "Non-Violence (Ahimsa)",
+            "modernView": "Mindful Consumption",
+            "description": "Carefully inspect wood before putting it in the fire to save insects.",
+            "scientificBacking": "Promotes biodiversity by saving micro-fauna.",
+            "deepAnalysis": "### Mindfulness in Destruction\n\n**1. Ethical Consumption**\nEven the necessary act of burning fuel for cooking is done with extreme caution. This teaches that human survival should minimize collateral damage to other species.\n\n**2. Attention to Detail**\nThis rule cultivates a habit of observation. A Bishnoi enters the forest not as a conqueror but as a careful guest."
+        },
+        "rule-9": {
+            "title": "Vani Suno (Listen to Sermons)",
+            "shortDesc": "Listen to the holy words/sermons.",
+            "traditional": "Vani Suno",
+            "significance": "Education & Ethics",
+            "modernView": "Lifelong Learning",
+            "description": "Regularly listen to the Sabadwani (teachings of the Guru).",
+            "scientificBacking": "Reinforces communal values and provides a feedback loop for moral behavior.",
+            "deepAnalysis": "### Oral Tradition as Education\n\nIn a largely illiterate 15th-century society, listening (Shravan) was the primary mode of education. This rule ensured that the ethical code was continually refreshed in the collective memory, preventing the corruption of values over time."
+        },
+        "rule-10": {
+            "title": "Kshama (Forgiveness)",
+            "shortDesc": "Practice forgiveness from the heart.",
+            "traditional": "Kshama Dhyavani",
+            "significance": "Conflict Resolution",
+            "modernView": "Emotional Intelligence",
+            "description": "To forgive is divine. Holding onto anger harms the self.",
+            "scientificBacking": "Forgiveness lowers blood pressure and reduces stress. Structurally, it prevents blood feuds.",
+            "deepAnalysis": "### The Power of Letting Go\n\n**1. Social Cohesion**\nIn close-knit village communities, conflicts are inevitable. If every slight led to revenge, society would fracture. The rule of Kshama mandated a reset button. It prioritized community stability over individual ego.\n\n**2. Spiritual Weight**\nGuru Jambheshwar taught that anger is a fire that burns the vessel it is stored in. Forgiveness is the cooling water."
+        },
+        "rule-11": {
+            "title": "Daya (Compassion)",
+            "shortDesc": "Have pity and kindness in the heart.",
+            "traditional": "Daya",
+            "significance": "Empathy",
+            "modernView": "Social Welfare",
+            "description": "Be kind not just to animals, but to fellow humans.",
+            "scientificBacking": "Compassion releases oxytocin, promoting social bonding.",
+            "deepAnalysis": "### The Universal Solvent\n\nDaya is the active form of love. While 'Ahimsa' is negative (do not kill), 'Daya' is positive (help the suffering). It mandates active charity and care for the weak, elderly, and destitute."
+        },
+        "rule-12": {
+            "title": "Chori Na Karo (No Theft)",
+            "shortDesc": "Do not steal.",
+            "traditional": "Chori Tyago",
+            "significance": "Property Rights",
+            "modernView": "Legal Integrity",
+            "description": "Respect the property of others.",
+            "scientificBacking": "Essential for economic stability and trust within the community.",
+            "deepAnalysis": "### Trust as Currency\n\nA society without theft does not need locks. This rule aimed to create a 'high-trust' society where resources could be shared and trade could flourish without the transaction costs of security and suspicion."
+        },
+        "rule-13": {
+            "title": "Ninda Na Karo (No Criticism)",
+            "shortDesc": "Do not condemn or criticize others.",
+            "traditional": "Ninda Tyago",
+            "significance": "Mental Purity",
+            "modernView": "Positive Psychology",
+            "description": "Avoid gossip and backbiting.",
+            "scientificBacking": "Gossip creates social toxicity. Abstaining from it preserves mental peace and community harmony.",
+            "deepAnalysis": "### The Architecture of Speech\n\nCriticism often stems from ego. By forbidding Ninda, the Guru addressed the root cause of social division. It forces individuals to focus on their own flaws rather than highlighting those of others."
+        },
+        "rule-14": {
+            "title": "Jhooth Na Bolo (No Lying)",
+            "shortDesc": "Always speak the truth.",
+            "traditional": "Jhooth Tyago",
+            "significance": "Integrity",
+            "modernView": "Honesty",
+            "description": "Truthfulness is the foundation of religion.",
+            "scientificBacking": "Lying is cognitively taxing. Truthfulness simplifies social interactions.",
+            "deepAnalysis": "### Satya (Truth) as God\n\nIn the Dharmic tradition, Truth is equivalent to God. A liar denies reality, and thus denies the divine. This rule ensures that a Bishnoi's word is a bond."
+        },
+        "rule-15": {
+            "title": "Vad-Vivad Na Karo (No Arguing)",
+            "shortDesc": "Do not waste time in useless arguments.",
+            "traditional": "Vaad Na Karo",
+            "significance": "Mental Peace",
+            "modernView": "Conflict Avoidance",
+            "description": "Avoid heated debates that lead nowhere.",
+            "scientificBacking": "Prevents cortisol spikes and relationship breakdown.",
+            "deepAnalysis": "### The Futility of Ego battles\n\nGuru Jambheshwar distinguished between 'Samvad' (Dialogue) and 'Vivad' (Argument). Dialogue seeks truth; Argument seeks victory. A Bishnoi should engage in the former but avoid the latter."
+        },
+        "rule-16": {
+            "title": "Amavasya Vrat (Fasting)",
+            "shortDesc": "Fast on the moonless night (Amavasya).",
+            "traditional": "Amavasya Vrat",
+            "significance": "Detoxification",
+            "modernView": "Intermittent Fasting",
+            "description": "Observe a fast on the last day of the lunar cycle.",
+            "scientificBacking": "Fasting gives the digestive system a break and promotes autophagy (cellular repair).",
+            "deepAnalysis": "### Lunar Cycles and Biology\n\nThe gravitational pull of the moon affects water bodies, and historically it is believed to affect body fluids and the mind. Fasting on Amavasya is a way to counteract any mental instability or lethargy associated with the lunar cycle."
+        },
+        "rule-17": {
+            "title": "Vishnu Bhajan",
+            "shortDesc": "Worship Lord Vishnu daily.",
+            "traditional": "Vishnu Smaran",
+            "significance": "Devotion",
+            "modernView": "Bhakti Yoga",
+            "description": "Remember the Creator.",
+            "scientificBacking": "Surrender to a higher power acts as a psychological anchor during tough times.",
+            "deepAnalysis": "### The Preserver\n\nVishnu is the 'Preserver' in the Trinity. For a community dedicated to preservation (of nature, life, and values), worshipping Vishnu is thematically consistent. It serves as a reminder of their role as guardians of creation."
+        },
+        "rule-18": {
+            "title": "Jeev Daya (General Compassion)",
+            "shortDesc": "Compassion to all living beings.",
+            "traditional": "Jeev Daya",
+            "significance": "Non-Violence",
+            "modernView": "Universal Empathy",
+            "description": "Have mercy on all beings.",
+            "scientificBacking": "Creates a gentle society.",
+            "deepAnalysis": "### Expanding the Circle of Moral Concern\n\nThis rule generalizes compassion. It is the umbrella under which all specific animal protection rules fall. It asks for a fundamental shift in perception—seeing the Divine in every creature."
+        },
+        "rule-19": {
+            "title": "Mas Na Khave (No Meat)",
+            "shortDesc": "Strict prohibition of meat.",
+            "traditional": "Mas Na Khave",
+            "significance": "Ecological & Spiritual",
+            "modernView": "Vegetarianism",
+            "description": "A Bishnoi must never consume meat.",
+            "scientificBacking": "Vegetarianism reduces carbon footprint and prevents zoonotic diseases.",
+            "deepAnalysis": "### The Ecological Cost of Meat\n\n**1. Trophic Efficiency**\nGuru Jambheshwar understood the inefficiency of the food chain. Growing crops to feed animals to feed humans wastes energy and water. In the Thar Desert, water is gold. A plant-based diet is the only sustainable way to support a population in an arid zone.\n\n**2. The Spiritual Cost**\nEating meat requires violence. Bishnoi theology posits that one cannot inflict pain on a fellow sentient being for the gratification of the tongue."
+        },
+        "rule-20": {
+            "title": "Amar Rakho (Immortality for Animals)",
+            "shortDesc": "Do not kill animals; keep them 'Amar'.",
+            "traditional": "Ajara Jarat",
+            "significance": "Wildlife Protection",
+            "modernView": "Anti-Poaching",
+            "description": "Actively protect animals from being killed.",
+            "scientificBacking": "Preserves biodiversity and the gene pool.",
+            "deepAnalysis": "### The Duty to Protect\n\nThis rule goes beyond 'not killing' (passive) to 'preventing killing' (active). It is the source of the Bishnoi activism against poachers. It implies that the animal's life is under the guardianship of the Bishnoi."
+        },
+        "rule-21": {
+            "title": "Bail Bandhya (No Castration)",
+            "shortDesc": "Do not castrate bulls.",
+            "traditional": "Bail Bandhya",
+            "significance": "Animal Rights",
+            "modernView": "Ethical Animal Husbandry",
+            "description": "Bulls should not be castrated; they should be used for breeding or agriculture naturally.",
+            "scientificBacking": "Preserves the virility and genetic diversity of livestock breeds.",
+            "deepAnalysis": "### Respecting Masculinity in Nature\n\nCastration was a common method to tame bulls for labor. Prohibiting it forced the community to develop gentler methods of domestication and training, relying on patience rather than physical mutilation."
+        },
+        "rule-22": {
+            "title": "Amar Pal (Shelter Animals)",
+            "shortDesc": "Provide shelter to old/abandoned animals.",
+            "traditional": "Amar Pal",
+            "significance": "Animal Welfare",
+            "modernView": "Animal Sanctuaries / Gaushalas",
+            "description": "Care for old animals until their natural death.",
+            "scientificBacking": "Prevents the cruel abandonment of non-productive livestock.",
+            "deepAnalysis": "### Radical Empathy: The Bishnoi & The Blackbuck\n\n**1. Beyond Utility**\nMost agricultural societies cull animals when they stop producing milk or labor. This rule mandates a 'pension plan' for animals. They are fed and cared for until natural death, recognizing their past service.\n\n**2. The Predator-Prey Balance**\nBy protecting herbivores like the Blackbuck, the Bishnois supported the entire food web."
+        },
+        "rule-23": {
+            "title": "Amal Na Khao (No Opium)",
+            "shortDesc": "Do not eat opium.",
+            "traditional": "Amal Varjeet",
+            "significance": "Addiction Prevention",
+            "modernView": "Drug-Free Life",
+            "description": "Strict prohibition of opium consumption.",
+            "scientificBacking": "Opium addiction was rampant in medieval Rajasthan. It destroys physical health.",
+            "deepAnalysis": "### Breaking the Chain of Addiction\n\nOpium was often used as a social ritual in desert cultures. By banning it, the Guru protected his followers from a debilitating addiction that drained household finances and lethargy."
+        },
+        "rule-24": {
+            "title": "Tamaku Na Piyo (No Tobacco)",
+            "shortDesc": "Do not use tobacco.",
+            "traditional": "Tamaku Varjeet",
+            "significance": "Cancer Prevention",
+            "modernView": "Carcinogen Avoidance",
+            "description": "No smoking or chewing tobacco.",
+            "scientificBacking": "Tobacco causes oral and lung cancer. Avoiding it ensures longevity.",
+            "deepAnalysis": "### A Pre-Medical Insight\n\nLong before modern medicine linked tobacco to cancer, Guru Jambheshwar categorized it as a poison. This rule has kept the cancer rates in the strictly observing Bishnoi community lower than the regional average."
+        },
+        "rule-25": {
+            "title": "Bhang Na Piyo (No Cannabis)",
+            "shortDesc": "Do not consume cannabis.",
+            "traditional": "Bhang Varjeet",
+            "significance": "Mental Clarity",
+            "modernView": "Sobriety",
+            "description": "Prohibition of hemp/cannabis.",
+            "scientificBacking": "Prevents dependency and psychosis.",
+            "deepAnalysis": "### Clarity of Mind\n\nThe Guru emphasized a sharp, alert mind ('Jaagrat'). Intoxicants like Bhang cloud judgement and induce lethargy, which is counter-productive to the disciplined life of a Bishnoi."
+        },
+        "rule-26": {
+            "title": "Madya Na Piyo (No Alcohol)",
+            "shortDesc": "Do not drink alcohol.",
+            "traditional": "Madya Varjeet",
+            "significance": "Social Stability",
+            "modernView": "Sobriety",
+            "description": "Complete abstinence from liquor.",
+            "scientificBacking": "Alcoholism destroys livers and families. Sobriety ensures economic resources are spent on nutrition.",
+            "deepAnalysis": "### The Social Evil\n\nAlcohol is often the fuel for domestic violence and bad decision-making. A dry community is a safer community for women and children."
+        },
+        "rule-27": {
+            "title": "Neel Na Kharo (No Indigo)",
+            "shortDesc": "Do not use blue indigo dye.",
+            "traditional": "Neel Varjeet",
+            "significance": "Environmental Protection",
+            "modernView": "Ecological Farming",
+            "description": "Historically, Bishnois do not wear Indigo-dyed blue clothes.",
+            "scientificBacking": "Indigo cultivation in the medieval era was resource-intensive and involved fermenting processes that killed insects.",
+            "deepAnalysis": "### The Color of Exploitation\n\nIn the medieval era, Indigo farming was often forced and ecologically damaging. The fermentation vats were death traps for millions of insects. By banning the color, the Guru effectively boycotted the industry."
+        },
+        "rule-28": {
+            "title": "Murde Gadho (Bury the Dead)",
+            "shortDesc": "Bury the dead to save wood.",
+            "traditional": "Murde Gadho",
+            "significance": "Forest Conservation",
+            "modernView": "Eco-friendly Funerals",
+            "description": "Bishnois bury their dead instead of cremating them.",
+            "scientificBacking": "Cremation requires quintals of wood. In a wood-scarce desert, this is ecologically expensive.",
+            "deepAnalysis": "### Returning to the Earth\n\n**1. Saving Trees**\nThis is perhaps the most pragmatic ecological rule. If every death required a tree to be cut for a pyre, the desert would have been stripped bare centuries ago. Burial saves thousands of trees annually.\n\n**2. Soil Enrichment**\nThe body becomes food for the decomposers, completing the nutrient cycle. It is the final act of giving back to nature."
+        },
+        "rule-29": {
+            "title": "Rukh Lila Nahi Ghave (Green Trees)",
+            "shortDesc": "Never cut a green tree.",
+            "traditional": "Rukh Lila Nahi Ghave",
+            "significance": "Deforestation Control",
+            "modernView": "Carbon Sequestration",
+            "description": "The most famous Bishnoi rule. It is forbidden to cut any green tree, especially the Khejri.",
+            "scientificBacking": "The Khejri tree is the 'King of the Desert'. It fixes nitrogen, prevents erosion, and provides fodder.",
+            "deepAnalysis": "### The Theology of the Tree: Rule 29\n\n**1. The Keystone Species**\nProhibiting the cutting of green trees was not a sentimental rule; it was a survival strategy. The *Prosopis cineraria* (Khejri) creates a microclimate under its canopy that allows crops to grow even in drought. It is a \"nurse tree.\"\n\n**2. Carbon Coding**\nCenturies before the term \"Climate Change\" was coined, Guru Jambheshwar codified carbon sequestration. Every mature Khejri tree protected by a Bishnoi is a carbon sink.\n\n**3. The Ultimate Test**\nThis rule is what led to the Khejarli Massacre. It is the only religious rule in the world for which 363 people voluntarily gave up their lives. It elevated the tree from a resource to a deity."
+        }
+    },
+    "guru": {
+        "title": "Guru Jambheshwar Bhagwan",
+        "subtitle": "The Divine Incarnation of Vishnu (1451 - 1536 AD)",
+        "tags": {
+            "founder": "Bishnoi Panth Founder",
+            "pioneer": "Eco-Dharma Pioneer",
+            "yogishwar": "Yogishwar"
+        },
+        "birth": {
+            "title": "Divine Birth & Origins",
+            "p1": "Guru Jambheshwar Ji (Jambhoji) was born on the sacred day of <0>Krishna Janmashtami in 1451 AD (Bhadrapad Krishna 8, Vikram Samvat 1508)</0> in the village of <1>Pipasar</1>, Nagaur district, Rajasthan.",
+            "p2": "He was born to the noble Rajput couple, <0>Thakur Lohat Ji Panwar</0> and <1>Mata Hansa Devi</1>. Lohat Ji was a wealthy landlord but remained childless for over 50 years. It was only after Hansa Devi's intense devotion and a divine promise from a generic mystic (believed to be Lord Vishnu) blessed them. Upon birth, the child Jambhoji did not cry, signaling his transcendence over worldly maya."
+        },
+        "childhood": {
+            "title": "Childhood Leelas: The Silent Years",
+            "p1": "For the first <0>7 years</0>, Jambhoji remained completely silent. He uttered not a word, leading his parents to believe he was mute. During these years, he spent his time grazing cattle in the forests of Pephsar.",
+            "p2": "In 1458 AD (Samvat 1515), hoping to cure his silence, his parents called a learned Brahmin. When the Brahmin began his rituals, the 7-year-old boy suddenly spoke, reciting his first Shabad: <0>\"Guru chinhyo guru chinhyo, guru chinhyo sah mah...\"</0> (Recognize the Divine Teacher within). He revealed that he was not mute, but in deep meditation (Samadhi)."
+        },
+        "miracle": {
+            "title": "The Miracle of the Lamp",
+            "desc": "One evening, his mother Hansa Devi tried to light the household lamp but found there was no oil (ghee) left. The young Guru gestured for her to use water instead. With hesitation but faith, she filled the lamp with water from the pot. When she touched the wick with fire, the water burned brighter and longer than any oil. This was his first revealed miracle (Parcha)."
+        },
+        "famine": {
+            "title": "The Chhapania Akal (1485 AD)",
+            "p1": "In 1485 AD, a catastrophic drought known as the <0>Chhapania Akal</0> devastated Marwar. For years, not a drop of rain fell. Cattle died in the thousands, and people resorted to desperate measures.",
+            "p2": "By this time, Jambhoji became the head of his household. Seeing the suffering, he renounced his chieftainship and wealth. He opened his family's granaries to the public, feeding the starving regardless of caste. He moved to a high sand dune called <0>Samrathal Dhora</0> and began his mission to save the desert from ecological ruin."
+        },
+        "rules": {
+            "title": "The 29 Principles (Bishnoi Panth)",
+            "p1": "On <0>Kartik Vadi 8, Samvat 1542 (1485 AD)</0>, Guru Jambheshwar performed a Havan on Samrathal Dhora and founded the Bishnoi sect. He initiated his uncle, **Pulo Ji Panwar**, as his first disciple.",
+            "p2": "He prescribed <0>29 Rules (Bees + Noi)</0>. These were unique because they combined spiritual purity with environmental protection:",
+            "list": {
+                "jeevDaya": "<0>Jeev Daya:</0> Compassion for all living beings.",
+                "trees": "<0>Runkh Lila Nahi Ghave:</0> Never cut a green tree.",
+                "purity": "<0>Shuddhata:</0> Filter water, milk, and firewood to avoid killing microscopic life."
+            }
+        },
+        "science": {
+            "title": "A Scientific Way of Life",
+            "desc": "\"Guru Ji realized that the desert ecosystem was fragile. The Khejri tree was the lifeline—holding the soil, providing fodder, and fuel (when dry). His ban on cutting green trees was a masterstroke of ecological foresight.\""
+        },
+        "dhams": {
+            "title": "The 8 Sacred Dhams",
+            "desc": "Guru Jambheshwar established these eight major pilgrimage sites (Ashta Dhams) during his travels. Click on any site to read its full history and significance.",
+            "readMore": "Read History"
+        },
+        "kings": {
+            "title": "Encounters with Emperors",
+            "lodi": {
+                "title": "Sultan Sikandar Lodi",
+                "desc": "In 1506 AD, during another drought, the Sultan of Delhi came to Marwar. He met Guru Jambheshwar and was so moved by his radiance that he issued a copper-plate Firman forbidding animal slaughter and tree felling in Bishnoi lands."
+            },
+            "jodha": {
+                "title": "Rao Jodha & Rao Bika",
+                "desc": "The founders of Jodhpur and Bikaner revered him. Guru Ji blessed Rao Bika, predicting his kingdom would thrive as long as he upheld justice. The Bikaner state flag respectfully carries the symbols of the Khejri tree."
+            }
+        },
+        "nirvana": {
+            "title": "Maha Nirvana",
+            "p1": "After 51 years of preaching and traveling, Guru Jambheshwar Ji attained Nirvana (left his mortal body) on <0>Margsir Krishna Navami, Samvat 1593 (1536 AD)</0> at the village of <1>Lalasar</1>.",
+            "p2": "His body was carried to <0>Mukam</0> (Talwa), where he had earlier ordered his disciples to bury him. Bishnois do not cremate their dead to save firewood—a final testament to his eco-friendly teachings. A magnificent temple now stands over his Samadhi at Mukam, visited by millions during the annual fairs in FALGUN and ASHVIN months."
+        }
+    },
+    "footer": {
+        "rights": "Khejri Bachao Andolan. All rights reserved.",
+        "disclaimerTitle": "Disclaimer:",
+        "disclaimerText": "This platform is for community reporting. We verify reports to the best of our ability but guarantee no absolute accuracy. User-generated content reflects the views of the author, not the organization."
+    },
+    "common": {
+        "loading": "Loading...",
+        "readMore": "Read Story",
+        "features": "Featured Stories"
+    }
+}
