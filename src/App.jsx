@@ -31,6 +31,9 @@ import IncidentsPage from './pages/IncidentsPage';
 import NewsDetailPage from './pages/NewsDetailPage';
 import BikanerAndolanPage from './pages/BikanerAndolanPage';
 import KhejriImportancePage from './pages/KhejriImportancePage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -63,6 +66,10 @@ function App() {
 
         <Route path="/movements/bikaner-2026" element={<BikanerAndolanPage />} />
         <Route path="/movements/importance" element={<KhejriImportancePage />} />
+
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         {/* Protected User Routes */}
         <Route element={<PrivateRoute />}>

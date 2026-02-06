@@ -41,36 +41,36 @@ const BikanerAndolanPage = () => {
                 </div>
 
                 <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-                    <div className="inline-flex items-center gap-2 bg-[#C53030] text-white px-4 py-1.5 rounded-sm font-bold uppercase tracking-widest text-xs mb-6 shadow-lg animate-pulse">
+                    <div className="inline-flex items-center gap-2 bg-[#C53030] text-white px-4 py-1.5 rounded-sm font-bold uppercase tracking-widest text-xs mb-4 md:mb-6 shadow-lg animate-pulse">
                         <span className="w-2 h-2 bg-white rounded-full animate-ping"></span>
                         Status: 🔴 सक्रिय/LIVE
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-2xl">
+                    <h1 className="text-3xl md:text-7xl font-serif font-bold text-white leading-tight mb-4 md:mb-6 drop-shadow-2xl">
                         बीकानेर खेजड़ी बचाओ <br />
                         <span className="text-brand-neon">आंदोलन 2026</span>
                     </h1>
-                    <div className="text-xl md:text-2xl text-gray-200 font-light max-w-3xl mx-auto leading-relaxed border-l-4 border-brand-neon pl-6 text-left bg-black/40 backdrop-blur-md p-6 rounded-r-lg space-y-4">
-                        <p className="font-semibold text-white">
+                    <div className="text-lg md:text-2xl text-gray-200 font-light max-w-3xl mx-auto leading-relaxed border-l-4 border-brand-neon pl-4 md:pl-6 text-left bg-black/40 backdrop-blur-md p-4 md:p-6 rounded-r-lg space-y-2 md:space-y-4">
+                        <p className="font-semibold text-white text-sm md:text-base">
                             📍 स्थान: बीकानेर कलेक्ट्रेट और करणीसर भाटियान, राजस्थान।
                         </p>
-                        <p>
+                        <p className="text-sm md:text-base">
                             मुख्य मुद्दा: पश्चिमी राजस्थान में सौर ऊर्जा संयंत्रों (Solar Plants) के नाम पर हजारों खेजड़ी के पेड़ों की निर्मम कटाई के विरोध में।
                         </p>
-                        <p className="text-brand-neon font-serif italic text-2xl mt-4">
+                        <p className="text-brand-neon font-serif italic text-xl md:text-2xl mt-4">
                             "सिर साठे रूंख रहे तो भी सस्तो जाण"
                         </p>
-                        <p className="text-sm opacity-80">(अर्थ: अगर सिर कटने पर भी पेड़ बच जाए, तो भी यह सौदा सस्ता है)</p>
+                        <p className="text-xs md:text-sm opacity-80">(अर्थ: अगर सिर कटने पर भी पेड़ बच जाए, तो भी यह सौदा सस्ता है)</p>
                     </div>
                 </div>
             </div>
 
             {/* 2. SUBSECTION A: THE ROOT CAUSE (Deep Dive) */}
-            <div className="max-w-4xl mx-auto px-4 py-20">
-                <div className="bg-black/40 backdrop-blur-xl p-8 rounded-[2rem] shadow-2xl border border-white/10">
+            <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
+                <div className="bg-black/40 backdrop-blur-xl p-6 md:p-8 rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/10">
                     <span className="text-brand-neon font-bold tracking-widest uppercase text-sm block mb-4 border-b-2 border-brand-neon w-fit pb-1 bg-white/10 px-2 rounded">
                         मुख्य मुद्दा (Main Issue)
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-8 leading-tight">
+                    <h2 className="text-2xl md:text-4xl font-serif font-bold text-white mb-6 md:mb-8 leading-tight">
                         सौर ऊर्जा संयंत्र बनाम खेजड़ी
                     </h2>
                     <div className="prose prose-lg text-gray-200 leading-relaxed space-y-6">

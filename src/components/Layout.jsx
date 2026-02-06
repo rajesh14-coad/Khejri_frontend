@@ -6,6 +6,9 @@ import Footer from './Footer';
 const Layout = ({ children }) => {
     return (
         <div className="flex flex-col min-h-screen relative">
+            {/* Global Background Wrapper */}
+            <div className="fixed inset-0 -z-50 bg-[url('/images/khejri.png')] bg-no-repeat bg-cover bg-[center_top] md:bg-center md:bg-fixed w-full min-h-screen" />
+
             <Navbar />
             <main className="flex-grow container mx-auto px-4 py-8">
                 {children}

@@ -171,7 +171,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay (Full Screen Glass) */}
             {isOpen && (
-                <div className="md:hidden fixed inset-0 z-40 bg-black/40 backdrop-blur-xl border-t border-white/10 animate-fade-in pt-24 px-6 overflow-y-auto">
+                <div className="md:hidden fixed inset-0 z-40 bg-black/95 backdrop-blur-xl border-t border-white/10 animate-fade-in pt-24 px-6 overflow-y-auto">
                     <div className="space-y-4">
                         <Link to="/" onClick={() => setIsOpen(false)} className="block p-4 rounded-2xl bg-white/5 border border-white/10 text-xl font-bold text-white text-center">
                             {t('menu.home', 'Home')}
