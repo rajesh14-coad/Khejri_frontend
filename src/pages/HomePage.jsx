@@ -285,7 +285,7 @@ const HomePage = () => {
                                 <div className="aspect-[3/4] rounded-full border-4 border-[#C2B280]/30 p-2 relative">
                                     <div className="w-full h-full rounded-full bg-black/20 overflow-hidden flex items-center justify-center relative shadow-inner">
                                         <img
-                                            src="public/images/guru_jambheshwar2.png"
+                                            src="/images/guru_jambheshwar2.png"
                                             alt="Guru Jambheshwar"
                                             className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                                         />
