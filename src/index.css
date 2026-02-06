@@ -4,11 +4,53 @@
 
 @layer base {
   body {
-    @apply bg-nature-light text-gray-800 font-sans;
+    @apply text-gray-800 font-sans;
+    background-image: url('/Users/commando_life/Desktop/Khejri_frontend/src/assets/khejri.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Global Click Interaction - Pulse Glow */
+  button:active,
+  a:active,
+  button:focus,
+  a:focus {
+    @apply shadow-[0_0_10px_#4cd57a] text-[#4cd57a] outline-none;
   }
 }
 
 .leaflet-container {
   width: 100%;
   height: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

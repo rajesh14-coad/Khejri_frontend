@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex items-center space-x-2 bg-nature-light/50 rounded-full px-3 py-1 border border-nature-tan/30">
+        <div className="flex items-center space-x-2 bg-nature-light/50 rounded-full px-3 py-1 border border-brand-neon">
             <Globe className="w-4 h-4 text-nature-dark" />
             <button
                 onClick={() => changeLanguage('en')}

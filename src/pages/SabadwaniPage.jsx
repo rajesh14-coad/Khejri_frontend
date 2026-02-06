@@ -21,14 +21,10 @@ const SabadwaniPage = () => {
     );
 
     return (
-        <div className="bg-[#fcfbf7] min-h-screen pb-20">
+        <div className="min-h-screen pb-20">
             {/* Typographic Hero */}
-            <div className="bg-nature-dark text-nature-tan py-24 px-4 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-10 pointer-events-none">
-                    <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full border-[20px] border-nature-tan/20"></div>
-                    <div className="absolute top-40 left-10 w-40 h-40 rounded-full border-[10px] border-nature-tan/10"></div>
-                </div>
-
+            <div className="text-white py-24 px-4 relative overflow-hidden">
+                {/* Removed absolute background shapes to let global desert background show clearly */}
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <div className="inline-flex items-center justify-center p-3 bg-white/5 rounded-full mb-6 border border-white/10 backdrop-blur-sm">
                         <BookOpen className="w-6 h-6 mr-2" />
@@ -36,10 +32,10 @@ const SabadwaniPage = () => {
                             {isHindi ? "पवित्र ग्रंथ" : "The Holy Scripture"}
                         </span>
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-white">
+                    <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-white drop-shadow-md">
                         {isHindi ? "श्री शब्दवाणी" : "Shri Sabadwani"}
                     </h1>
-                    <p className="text-xl md:text-2xl opacity-80 max-w-2xl mx-auto font-serif italic">
+                    <p className="text-xl md:text-2xl text-gray-200 opacity-90 max-w-2xl mx-auto font-serif italic drop-shadow-sm">
                         {isHindi
                             ? '"गुरु जाम्भोजी द्वारा उच्चारित 120 शब्द"'
                             : '"120 Hymns of Divine Wisdom spoken by Guru Jambheshwar"'}
@@ -50,14 +46,14 @@ const SabadwaniPage = () => {
             {/* Content Section */}
             <div className="max-w-7xl mx-auto px-4 -mt-10 relative z-20">
                 {/* Search Bar */}
-                <div className="max-w-md mx-auto bg-white p-2 rounded-full shadow-lg border border-gray-100 flex items-center mb-16">
-                    <div className="pl-4 text-gray-400">
+                <div className="max-w-md mx-auto bg-black/30 backdrop-blur-md p-2 rounded-full shadow-lg border border-white/20 flex items-center mb-16">
+                    <div className="pl-4 text-gray-300">
                         <Search className="w-5 h-5" />
                     </div>
                     <input
                         type="text"
                         placeholder={isHindi ? "शब्द संख्या या पाठ खोजें..." : "Search by number or text..."}
-                        className="w-full p-3 outline-none text-gray-700 rounded-r-full placeholder-gray-400"
+                        className="w-full p-3 outline-none bg-transparent text-white rounded-r-full placeholder-gray-400"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -67,30 +63,30 @@ const SabadwaniPage = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredSabads.map((sabad) => (
                         <Link to={`/sabadwani/${sabad.id}`} key={sabad.id} className="group">
-                            <div className="bg-white hover:bg-nature-tan/10 h-full p-8 rounded-xl border border-nature-tan/20 hover:border-nature-tan transition-all duration-300 shadow-sm hover:shadow-md flex flex-col relative overflow-hidden">
+                            <div className="bg-black/40 backdrop-blur-xl h-full p-8 rounded-[2rem] border border-white/10 hover:bg-black/50 hover:border-white/20 transition-all duration-300 shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex flex-col relative overflow-hidden hover:-translate-y-1">
                                 {/* Decorative Number Background */}
-                                <span className="absolute -right-4 -top-6 text-9xl font-serif font-bold text-gray-50 opacity-5 group-hover:text-nature-dark/5 transition-colors select-none">
+                                <span className="absolute -right-4 -top-6 text-9xl font-serif font-bold text-white opacity-5 group-hover:opacity-10 transition-opacity select-none">
                                     {sabad.number}
                                 </span>
 
                                 <div className="mb-6 flex justify-between items-start">
-                                    <span className="inline-block px-3 py-1 bg-nature-light text-nature-dark text-xs font-bold uppercase tracking-wider rounded-md">
+                                    <span className="inline-block px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-wider rounded-md border border-white/10">
                                         {isHindi ? "शब्द" : "Sabad"} {sabad.number}
                                     </span>
-                                    <Feather className="w-5 h-5 text-nature-green opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:rotate-12" />
+                                    <Feather className="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:rotate-12" />
                                 </div>
 
                                 {/* ORIGINAL TEXT (Always Visible) */}
-                                <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3 group-hover:text-nature-dark transition-colors line-clamp-2">
+                                <h3 className="text-2xl font-serif font-bold text-white mb-3 tracking-wide line-clamp-2 drop-shadow-sm">
                                     {sabad.original}
                                 </h3>
 
                                 {/* TRANSLATED PREVIEW */}
-                                <div className="border-t border-gray-100 pt-4 mt-auto">
-                                    <p className="text-sm text-gray-500 line-clamp-3 mb-3">
+                                <div className="border-t border-white/10 pt-4 mt-auto">
+                                    <p className="text-sm text-gray-300 line-clamp-3 mb-3 font-light">
                                         {isHindi ? sabad.meaning_hi : sabad.meaning_en}
                                     </p>
-                                    <div className="flex items-center text-nature-green font-bold text-sm group-hover:translate-x-1 transition-transform">
+                                    <div className="flex items-center text-white/80 font-bold text-sm group-hover:translate-x-1 transition-transform group-hover:text-white">
                                         {isHindi ? "पूर्ण अर्थ पढ़ें" : "Read Full Analysis"}
                                         <ArrowRight className="w-4 h-4 ml-2" />
                                     </div>
@@ -101,7 +97,7 @@ const SabadwaniPage = () => {
                 </div>
 
                 {filteredSabads.length === 0 && (
-                    <div className="text-center py-20 opacity-50">
+                    <div className="text-center py-20 opacity-70 text-white">
                         <p className="text-xl font-serif">
                             {isHindi ? "कोई शब्द नहीं मिला।" : "No Sabads found matching your search."}
                         </p>

@@ -51,56 +51,62 @@ const NewsPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#f8f5f1] py-8">
+        <div className="min-h-screen pb-32 relative">
             <SEO
                 title="Community Updates"
                 description="Stay informed about environmental conservation, community initiatives, and the latest news from the Khejri Guardian."
             />
-            <div className="max-w-7xl mx-auto px-4">
+
+            {/* FIXED BACKGROUND */}
+            <div className="fixed inset-0 bg-[url('/images/desert-bg.jpg')] bg-cover bg-center bg-no-repeat z-[-1]"></div>
+            <div className="fixed inset-0 bg-black/60 z-[-1]"></div>
+
+            <div className="max-w-7xl mx-auto px-4 py-8">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl font-bold text-nature-dark mb-4">Latest News & Updates</h1>
-                    <p className="text-xl text-gray-600">Stay informed about environmental conservation and community initiatives</p>
+                    <h1 className="text-5xl font-serif font-bold text-white mb-4 drop-shadow-md">Latest News & Updates</h1>
+                    <p className="text-xl text-gray-300 font-light">Stay informed about environmental conservation and community initiatives</p>
                 </div>
 
                 {/* Featured Articles */}
                 {featuredNews.length > 0 && (
                     <div className="mb-12">
                         <div className="flex items-center gap-2 mb-6">
-                            <Star className="w-6 h-6 text-yellow-500 fill-yellow-500" />
-                            <h2 className="text-3xl font-bold text-nature-dark">Featured Stories</h2>
+                            <Star className="w-6 h-6 text-[#C2B280] fill-[#C2B280]" />
+                            <h2 className="text-3xl font-serif font-bold text-white">Featured Stories</h2>
                         </div>
                         <div className="grid md:grid-cols-3 gap-6">
                             {featuredNews.map(article => (
                                 <Link
                                     key={article._id}
                                     to={`/news/${article.slug}`}
-                                    className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300"
+                                    className="group bg-black/40 backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden border border-white/10 hover:border-brand-neon/50 transition-all duration-300 transform hover:-translate-y-1"
                                 >
                                     {article.featuredImage && (
                                         <div className="relative overflow-hidden h-56">
                                             <img
                                                 src={article.featuredImage}
                                                 alt={article.title}
-                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                             />
-                                            <div className="absolute top-4 right-4">
-                                                <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
-                                                    <Star className="w-3 h-3 fill-white" />
+                                            <div className="absolute top-4 right-4 z-10">
+                                                <span className="bg-[#C2B280] text-black px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
+                                                    <Star className="w-3 h-3 fill-black" />
                                                     Featured
                                                 </span>
                                             </div>
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
                                         </div>
                                     )}
-                                    <div className="p-6">
-                                        <span className="inline-block px-3 py-1 bg-nature-green text-white text-xs font-bold rounded-full mb-3">
+                                    <div className="p-6 relative">
+                                        <span className="inline-block px-3 py-1 bg-brand-olive/30 border border-brand-olive text-brand-neon text-xs font-bold rounded-full mb-3 backdrop-blur-md">
                                             {article.category}
                                         </span>
-                                        <h3 className="text-xl font-bold text-nature-dark mb-3 group-hover:text-nature-green transition line-clamp-2">
+                                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-brand-neon transition line-clamp-2 leading-tight">
                                             {article.title}
                                         </h3>
-                                        <p className="text-gray-600 mb-4 line-clamp-3">{article.excerpt}</p>
-                                        <div className="flex items-center gap-4 text-sm text-gray-500">
+                                        <p className="text-gray-400 mb-4 line-clamp-3 text-sm">{article.excerpt}</p>
+                                        <div className="flex items-center gap-4 text-sm text-gray-500 pt-4 border-t border-white/10">
                                             <div className="flex items-center gap-1">
                                                 <Calendar className="w-4 h-4" />
                                                 <span>{new Date(article.publishedAt || article.createdAt).toLocaleDateString()}</span>
@@ -118,14 +124,14 @@ const NewsPage = () => {
                 )}
 
                 {/* Category Filter */}
-                <div className="bg-white rounded-2xl shadow-sm p-6 mb-8 border border-gray-100">
+                <div className="bg-black/40 backdrop-blur-xl rounded-2xl shadow-lg p-6 mb-8 border border-white/10">
                     <div className="flex items-center gap-4 flex-wrap">
-                        <Filter className="w-5 h-5 text-gray-500" />
+                        <Filter className="w-5 h-5 text-brand-neon" />
                         <button
                             onClick={() => setSelectedCategory('all')}
-                            className={`px-4 py-2 rounded-full font-medium transition ${selectedCategory === 'all'
-                                ? 'bg-nature-green text-white'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            className={`px-4 py-2 rounded-full font-medium transition-all ${selectedCategory === 'all'
+                                ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40'
+                                : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
                                 }`}
                         >
                             All News ({news.length})
@@ -134,9 +140,9 @@ const NewsPage = () => {
                             <button
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
-                                className={`px-4 py-2 rounded-full font-medium transition ${selectedCategory === category
-                                    ? 'bg-nature-green text-white'
-                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                className={`px-4 py-2 rounded-full font-medium transition-all ${selectedCategory === category
+                                    ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40'
+                                    : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
                                     }`}
                             >
                                 {category} ({news.filter(n => n.category === category).length})
@@ -148,13 +154,13 @@ const NewsPage = () => {
                 {/* News Grid */}
                 {loading ? (
                     <div className="text-center py-20">
-                        <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-nature-green mx-auto mb-4"></div>
-                        <p className="text-gray-600">Loading news...</p>
+                        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-brand-neon mx-auto mb-4 border-r-2 border-transparent"></div>
+                        <p className="text-gray-400 animate-pulse">Loading updates...</p>
                     </div>
                 ) : filteredNews.length === 0 ? (
-                    <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
-                        <h3 className="text-lg font-bold text-gray-500 mb-2">No articles found</h3>
-                        <p className="text-gray-400">No articles match the selected category.</p>
+                    <div className="text-center py-20 bg-black/40 backdrop-blur-xl rounded-2xl border border-dashed border-white/20">
+                        <h3 className="text-lg font-bold text-gray-300 mb-2">No articles found</h3>
+                        <p className="text-gray-500">No articles match the selected category.</p>
                     </div>
                 ) : (
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -162,27 +168,28 @@ const NewsPage = () => {
                             <Link
                                 key={article._id}
                                 to={`/news/${article.slug}`}
-                                className="group bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
+                                className="group bg-black/40 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden border border-white/10 hover:border-brand-neon/30 hover:bg-black/50 transition-all duration-300"
                             >
                                 {article.featuredImage && (
                                     <div className="relative overflow-hidden h-48">
                                         <img
                                             src={article.featuredImage}
                                             alt={article.title}
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                         />
+                                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                                     </div>
                                 )}
                                 <div className="p-6">
-                                    <span className="inline-block px-3 py-1 bg-gray-100 text-gray-700 text-xs font-bold rounded-full mb-3">
+                                    <span className="inline-block px-3 py-1 bg-white/5 border border-white/10 text-gray-300 text-xs font-bold rounded-full mb-3">
                                         {article.category}
                                     </span>
-                                    <h3 className="text-lg font-bold text-nature-dark mb-3 group-hover:text-nature-green transition line-clamp-2">
+                                    <h3 className="text-lg font-bold text-white mb-3 group-hover:text-brand-neon transition line-clamp-2">
                                         {article.title}
                                     </h3>
-                                    <p className="text-gray-600 mb-4 line-clamp-3 text-sm">{article.excerpt}</p>
-                                    <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-                                        <div className="flex items-center gap-1">
+                                    <p className="text-gray-400 mb-4 line-clamp-3 text-sm">{article.excerpt}</p>
+                                    <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-white/10">
+                                        <div className="flex items-center gap-1 text-brand-neon">
                                             <User className="w-3 h-3" />
                                             <span>{article.author?.name || 'Admin'}</span>
                                         </div>

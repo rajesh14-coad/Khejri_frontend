@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import NewsPage from './pages/NewsPage';
 import ReportPage from './pages/ReportPage';
@@ -28,10 +29,13 @@ import SabadDetailPage from './pages/SabadDetailPage';
 import CommunityPage from './pages/CommunityPage';
 import IncidentsPage from './pages/IncidentsPage';
 import NewsDetailPage from './pages/NewsDetailPage';
+import BikanerAndolanPage from './pages/BikanerAndolanPage';
+import KhejriImportancePage from './pages/KhejriImportancePage';
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/community" element={<CommunityPage />} />
@@ -56,6 +60,9 @@ function App() {
         <Route path="/news/:slug" element={<NewsDetailPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+
+        <Route path="/movements/bikaner-2026" element={<BikanerAndolanPage />} />
+        <Route path="/movements/importance" element={<KhejriImportancePage />} />
 
         {/* Protected User Routes */}
         <Route element={<PrivateRoute />}>

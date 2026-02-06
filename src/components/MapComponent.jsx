@@ -19,7 +19,7 @@ const MapComponent = ({ incidents }) => {
     const center = [26.5, 73.8];
 
     return (
-        <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg border-2 border-nature-green z-0">
+        <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg border-2 border-brand-olive z-0">
             <MapContainer center={center} zoom={7} scrollWheelZoom={false} className="h-full w-full">
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -50,7 +50,7 @@ const MapComponent = ({ incidents }) => {
                     const getMarkerIcon = (status) => {
                         const colors = {
                             pending: '#eab308',    // yellow
-                            verified: '#22c55e',   // green
+                            verified: '#4cd57a',   // green
                             resolved: '#3b82f6',   // blue
                             rejected: '#ef4444'    // red
                         };
@@ -88,9 +88,9 @@ const MapComponent = ({ incidents }) => {
                                     <p className="text-sm text-gray-600 mb-2">{incident.description}</p>
                                     <p className="text-sm font-medium mb-2">📍 {incident.locationName}</p>
                                     <span className={`inline-block px-3 py-1 text-xs font-bold rounded-full mt-1 ${incident.status === 'verified' ? 'bg-green-100 text-green-800' :
-                                            incident.status === 'resolved' ? 'bg-blue-100 text-blue-800' :
-                                                incident.status === 'rejected' ? 'bg-red-100 text-red-800' :
-                                                    'bg-yellow-100 text-yellow-800'
+                                        incident.status === 'resolved' ? 'bg-blue-100 text-blue-800' :
+                                            incident.status === 'rejected' ? 'bg-red-100 text-red-800' :
+                                                'bg-yellow-100 text-yellow-800'
                                         }`}>
                                         {incident.status.charAt(0).toUpperCase() + incident.status.slice(1)}
                                     </span>

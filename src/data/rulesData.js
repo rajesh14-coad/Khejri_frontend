@@ -10,7 +10,6 @@ export const rulesData = [
         modernView: "Post-partum Quarantine / Recovery Period",
         description: "The mother and newborn must remain in a clean, isolated environment for 30 days after birth. No outsider is allowed to touch them.",
         scientificBacking: "In the 15th century, infant mortality due to infections was high. Isolating the mother and child acted as a quarantine, protecting the newborn's developing immune system from external pathogens.",
-        image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Science of Sutak: Ancient Quarantine\n\n**1. Immunological Shielding**\nThe first rule of the Bishnoi code addresses the most critical period of human life: the neonatal phase. In an era without antibiotics or vaccines, the \"Sutak\" (impurity/segregation) period was effectively a bio-bubble. By restricting access to the mother and child for 30 days, Guru Jambheshwar minimized the risk of handling-induced infections (like sepsis).\n\n**2. Maternal Recovery**\nChildbirth is physically traumatic. The mandatory isolation meant the mother was excused from all household chores—cooking, fetching water, or working in the fields. This provided a guaranteed period of rest, crucial for preventing uterine prolapse and ensuring successful lactation.\n\n**3. Psychological Bonding**\nThe isolation created an undisturbed space for the mother-child bond to develop, essential for oxytocin release and breastfeeding success."
     },
     {
@@ -24,7 +23,6 @@ export const rulesData = [
         modernView: "Menstrual Leave / Health Break",
         description: "Women are exempted from all work and religious duties for 5 days during menstruation.",
         scientificBacking: "This rule was primarily about rest. In an agrarian society where women performed heavy manual labor, this rule provided a mandatory monthly break to recover from menstrual fatigue.",
-        image: "https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### Rethinking Menstrual Taboos\n\n**1. The Economics of Rest**\nWhile modern lenses often view menstrual segregation as discriminatory, in the context of 15th-century peasant life, it was a relief measure. Bishnoi women were the backbone of the household economy. Without a religious mandate, they would never be granted \"sick leave.\" By codifying it as a religious rule, Guru Jambheshwar ensured that men *had* to take over household duties for these 5 days.\n\n**2. Hygiene Management**\nWithout modern sanitary products, managing hygiene while working in the fields was difficult and prone to infection. Staying at home allowed for better personal care."
     },
     {
@@ -38,7 +36,6 @@ export const rulesData = [
         modernView: "Circadian Rhythm Regulation",
         description: "One must bathe every morning before sunrise.",
         scientificBacking: "Waking up before sunrise (Brahma Muhurta) regulates the body clock. Cold water baths boost circulation and immunity.",
-        image: "https://images.unsplash.com/photo-1545229765-98305c1d7350?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Discipline of the Dawn\n\n**1. Hydrotherapy**\nDaily bathing in the harsh desert environment of Rajasthan was not just about cleaning dirt; it was a ritual of awakening. The shock of cold water activates the sympathetic nervous system, increasing alertness and metabolic rate.\n\n**2. Symbolism**\nExternal cleanliness is seen as a prerequisite for internal purity. One cannot meditate with a lethargic body. This rule sets the tone for the entire day—starting with discipline."
     },
     {
@@ -52,7 +49,6 @@ export const rulesData = [
         modernView: "Stress Management / Stoicism",
         description: "Practice modesty, integrity, and contentment with what you have.",
         scientificBacking: "Chronic stress and envy release cortisol, damaging health. Contentment (Santosh) is a psychological buffer against anxiety.",
-        image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Psychology of Contentment\n\n**1. The Anti-Consumerist Stance**\nIn a world driven by accumulation, this rule teaches the value of \"enough.\" A contented mind consumes less, clutters less, and destroys less. This connects directly to environmental sustainability—greed is the root of exploitation.\n\n**2. Integrity (Sheel)**\nGood character is the social capital of the community. It builds trust, reducing social friction and conflict."
     },
     {
@@ -66,7 +62,6 @@ export const rulesData = [
         modernView: "Micro-organism Protection",
         description: "Water and milk must be filtered before consumption. Firewood must be checked for insects before burning.",
         scientificBacking: "Filtering water prevents water-borne diseases (Guineaworm was common). Checking firewood prevents the accidental killing of ants/insects.",
-        image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### The Micro-Ethics of Filtration\n\n**1. Preventive Health**\nFiltering water with a cloth was the most effective way to remove particulate matter and macro-parasites in pre-modern times. It saved the community from debilitating diseases.\n\n**2. Ahimsa in Action**\nThe rule extends non-violence to the invisible. Checking firewood (Indhan) ensures that one does not accidentally burn a colony of ants or insects hidden in the wood. It teaches mindfulness—every action, even lighting a fire, requires attention to life."
     },
     {
@@ -80,7 +75,6 @@ export const rulesData = [
         modernView: "Aromatherapy / Ritual Discipline",
         description: "Perform the fire ritual daily to purify the atmosphere and the mind.",
         scientificBacking: "Burning pure ghee and wood produces volatile oils that can reduce airborne bacteria (fumigation effect).",
-        image: "https://images.unsplash.com/photo-1603228254119-e6a4d095dc56?q=80&w=2671&auto=format&fit=crop",
         deepAnalysis: "### The Ritual of Fire\n\n**1. Atmospheric Purification**\nThe daily Havan uses specific ingredients known for their antimicrobial properties when combusted. In a contained village environment, this acted as a community fumigation practice.\n\n**2. Focus and Meditation**\nThe act of tending to the fire requires concentration. It serves as a daily meditation practice, centering the mind before the day's labor begins."
     },
     {
@@ -94,7 +88,6 @@ export const rulesData = [
         modernView: "Cognitive Focus / Mantra Meditation",
         description: "Recitation of sacred sounds to invoke wisdom.",
         scientificBacking: "Chanting regulates breathing (Pranayama) and reduces stress levels through vagus nerve stimulation.",
-        image: "https://images.unsplash.com/photo-1607519137452-f47055725355?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### The Power of Sound\n\n**1. Neuro-Linguistic Effect**\nRepetitive chanting (Japa) has been shown to induce theta brainwave states, promoting deep relaxation and creativity.\n\n**2. Cultural Continuity**\nBy prescribing a specific mantra, Guru Jambheshwar linked his followers to the broader Vedic tradition while maintaining their distinct identity."
     },
     {
@@ -108,7 +101,6 @@ export const rulesData = [
         modernView: "Mindful Consumption",
         description: "Carefully inspect wood before putting it in the fire to save insects.",
         scientificBacking: "Promotes biodiversity by saving micro-fauna.",
-        image: "https://images.unsplash.com/photo-1442533481060-9070eea14389?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### Mindfulness in Destruction\n\n**1. Ethical Consumption**\nEven the necessary act of burning fuel for cooking is done with extreme caution. This teaches that human survival should minimize collateral damage to other species.\n\n**2. Attention to Detail**\nThis rule cultivates a habit of observation. A Bishnoi enters the forest not as a conqueror but as a careful guest."
     },
     {
@@ -122,7 +114,6 @@ export const rulesData = [
         modernView: "Lifelong Learning",
         description: "Regularly listen to the Sabadwani (teachings of the Guru).",
         scientificBacking: "Reinforces communal values and provides a feedback loop for moral behavior.",
-        image: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### Oral Tradition as Education\n\nIn a largely illiterate 15th-century society, listening (Shravan) was the primary mode of education. This rule ensured that the ethical code was continually refreshed in the collective memory, preventing the corruption of values over time."
     },
     {
@@ -136,7 +127,6 @@ export const rulesData = [
         modernView: "Emotional Intelligence",
         description: "To forgive is divine. Holding onto anger harms the self.",
         scientificBacking: "Forgiveness lowers blood pressure and reduces stress. Structurally, it prevents blood feuds.",
-        image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=2699&auto=format&fit=crop",
         deepAnalysis: "### The Power of Letting Go\n\n**1. Social Cohesion**\nIn close-knit village communities, conflicts are inevitable. If every slight led to revenge, society would fracture. The rule of Kshama mandated a reset button. It prioritized community stability over individual ego.\n\n**2. Spiritual Weight**\nGuru Jambheshwar taught that anger is a fire that burns the vessel it is stored in. Forgiveness is the cooling water."
     },
     {
@@ -150,7 +140,6 @@ export const rulesData = [
         modernView: "Social Welfare",
         description: "Be kind not just to animals, but to fellow humans.",
         scientificBacking: "Compassion releases oxytocin, promoting social bonding.",
-        image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Universal Solvent\n\nDaya is the active form of love. While 'Ahimsa' is negative (do not kill), 'Daya' is positive (help the suffering). It mandates active charity and care for the weak, elderly, and destitute."
     },
     {
@@ -164,7 +153,6 @@ export const rulesData = [
         modernView: "Legal Integrity",
         description: "Respect the property of others.",
         scientificBacking: "Essential for economic stability and trust within the community.",
-        image: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=2673&auto=format&fit=crop",
         deepAnalysis: "### Trust as Currency\n\nA society without theft does not need locks. This rule aimed to create a 'high-trust' society where resources could be shared and trade could flourish without the transaction costs of security and suspicion."
     },
     {
@@ -178,7 +166,6 @@ export const rulesData = [
         modernView: "Positive Psychology",
         description: "Avoid gossip and backbiting.",
         scientificBacking: "Gossip creates social toxicity. Abstaining from it preserves mental peace and community harmony.",
-        image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Architecture of Speech\n\nCriticism often stems from ego. By forbidding Ninda, the Guru addressed the root cause of social division. It forces individuals to focus on their own flaws rather than highlighting those of others."
     },
     {
@@ -192,7 +179,6 @@ export const rulesData = [
         modernView: "Honesty",
         description: "Truthfulness is the foundation of religion.",
         scientificBacking: "Lying is cognitively taxing. Truthfulness simplifies social interactions.",
-        image: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### Satya (Truth) as God\n\nIn the Dharmic tradition, Truth is equivalent to God. A liar denies reality, and thus denies the divine. This rule ensures that a Bishnoi's word is a bond."
     },
     {
@@ -206,7 +192,6 @@ export const rulesData = [
         modernView: "Conflict Avoidance",
         description: "Avoid heated debates that lead nowhere.",
         scientificBacking: "Prevents cortisol spikes and relationship breakdown.",
-        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Futility of Ego battles\n\nGuru Jambheshwar distinguished between 'Samvad' (Dialogue) and 'Vivad' (Argument). Dialogue seeks truth; Argument seeks victory. A Bishnoi should engage in the former but avoid the latter."
     },
     {
@@ -220,7 +205,6 @@ export const rulesData = [
         modernView: "Intermittent Fasting",
         description: "Observe a fast on the last day of the lunar cycle.",
         scientificBacking: "Fasting gives the digestive system a break and promotes autophagy (cellular repair).",
-        image: "https://images.unsplash.com/photo-1544256626-d9b8973eb8b2?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### Lunar Cycles and Biology\n\nThe gravitational pull of the moon affects water bodies, and historically it is believed to affect body fluids and the mind. Fasting on Amavasya is a way to counteract any mental instability or lethargy associated with the lunar cycle."
     },
     {
@@ -234,7 +218,6 @@ export const rulesData = [
         modernView: "Bhakti Yoga",
         description: "Remember the Creator.",
         scientificBacking: "Surrender to a higher power acts as a psychological anchor during tough times.",
-        image: "https://images.unsplash.com/photo-1621827979802-6d778e120d88?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Preserver\n\nVishnu is the 'Preserver' in the Trinity. For a community dedicated to preservation (of nature, life, and values), worshipping Vishnu is thematically consistent. It serves as a reminder of their role as guardians of creation."
     },
     {
@@ -248,7 +231,6 @@ export const rulesData = [
         modernView: "Universal Empathy",
         description: "Have mercy on all beings.",
         scientificBacking: "Creates a gentle society.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=2674&auto=format&fit=crop",
         deepAnalysis: "### Expanding the Circle of Moral Concern\n\nThis rule generalizes compassion. It is the umbrella under which all specific animal protection rules fall. It asks for a fundamental shift in perception—seeing the Divine in every creature."
     },
     {
@@ -262,7 +244,6 @@ export const rulesData = [
         modernView: "Vegetarianism",
         description: "A Bishnoi must never consume meat.",
         scientificBacking: "Vegetarianism reduces carbon footprint and prevents zoonotic diseases.",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Ecological Cost of Meat\n\n**1. Trophic Efficiency**\nGuru Jambheshwar understood the inefficiency of the food chain. Growing crops to feed animals to feed humans wastes energy and water. In the Thar Desert, water is gold. A plant-based diet is the only sustainable way to support a population in an arid zone.\n\n**2. The Spiritual Cost**\nEating meat requires violence. Bishnoi theology posits that one cannot inflict pain on a fellow sentient being for the gratification of the tongue."
     },
     {
@@ -276,7 +257,6 @@ export const rulesData = [
         modernView: "Anti-Poaching",
         description: "Actively protect animals from being killed.",
         scientificBacking: "Preserves biodiversity and the gene pool.",
-        image: "https://images.unsplash.com/photo-1456926631375-92c8ce872def?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Duty to Protect\n\nThis rule goes beyond 'not killing' (passive) to 'preventing killing' (active). It is the source of the Bishnoi activism against poachers. It implies that the animal's life is under the guardianship of the Bishnoi."
     },
     {
@@ -290,7 +270,6 @@ export const rulesData = [
         modernView: "Ethical Animal Husbandry",
         description: "Bulls should not be castrated; they should be used for breeding or agriculture naturally.",
         scientificBacking: "Preserves the virility and genetic diversity of livestock breeds.",
-        image: "https://images.unsplash.com/photo-1549429158-5af415f019e0?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### Respecting Masculinity in Nature\n\nCastration was a common method to tame bulls for labor. Prohibiting it forced the community to develop gentler methods of domestication and training, relying on patience rather than physical mutilation."
     },
     {
@@ -304,7 +283,6 @@ export const rulesData = [
         modernView: "Animal Sanctuaries / Gaushalas",
         description: "Care for old animals until their natural death.",
         scientificBacking: "Prevents the cruel abandonment of non-productive livestock.",
-        image: "https://images.unsplash.com/photo-1535941339077-2dd1c7963098?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### Radical Empathy: The Bishnoi & The Blackbuck\n\n**1. Beyond Utility**\nMost agricultural societies cull animals when they stop producing milk or labor. This rule mandates a 'pension plan' for animals. They are fed and cared for until natural death, recognizing their past service.\n\n**2. The Predator-Prey Balance**\nBy protecting herbivores like the Blackbuck, the Bishnois supported the entire food web."
     },
     {
@@ -318,7 +296,6 @@ export const rulesData = [
         modernView: "Drug-Free Life",
         description: "Strict prohibition of opium consumption.",
         scientificBacking: "Opium addiction was rampant in medieval Rajasthan. It destroys physical health.",
-        image: "https://images.unsplash.com/photo-1627533810141-8633857e4368?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### Breaking the Chain of Addiction\n\nOpium was often used as a social ritual in desert cultures. By banning it, the Guru protected his followers from a debilitating addiction that drained household finances and lethargy."
     },
     {
@@ -332,7 +309,6 @@ export const rulesData = [
         modernView: "Carcinogen Avoidance",
         description: "No smoking or chewing tobacco.",
         scientificBacking: "Tobacco causes oral and lung cancer. Avoiding it ensures longevity.",
-        image: "https://images.unsplash.com/photo-1542475143-4dc96b27d425?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### A Pre-Medical Insight\n\nLong before modern medicine linked tobacco to cancer, Guru Jambheshwar categorized it as a poison. This rule has kept the cancer rates in the strictly observing Bishnoi community lower than the regional average."
     },
     {
@@ -346,7 +322,6 @@ export const rulesData = [
         modernView: "Sobriety",
         description: "Prohibition of hemp/cannabis.",
         scientificBacking: "Prevents dependency and psychosis.",
-        image: "https://images.unsplash.com/photo-1528659556828-5696d74dc0c3?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### Clarity of Mind\n\nThe Guru emphasized a sharp, alert mind ('Jaagrat'). Intoxicants like Bhang cloud judgement and induce lethargy, which is counter-productive to the disciplined life of a Bishnoi."
     },
     {
@@ -360,7 +335,6 @@ export const rulesData = [
         modernView: "Sobriety",
         description: "Complete abstinence from liquor.",
         scientificBacking: "Alcoholism destroys livers and families. Sobriety ensures economic resources are spent on nutrition.",
-        image: "https://images.unsplash.com/photo-1563814120-1a1c86518171?q=80&w=2574&auto=format&fit=crop",
         deepAnalysis: "### The Social Evil\n\nAlcohol is often the fuel for domestic violence and bad decision-making. A dry community is a safer community for women and children."
     },
     {
@@ -374,7 +348,6 @@ export const rulesData = [
         modernView: "Ecological Farming",
         description: "Historically, Bishnois do not wear Indigo-dyed blue clothes.",
         scientificBacking: "Indigo cultivation in the medieval era was resource-intensive and involved fermenting processes that killed insects.",
-        image: "https://images.unsplash.com/photo-1629196914563-356002167d58?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### The Color of Exploitation\n\nIn the medieval era, Indigo farming was often forced and ecologically damaging. The fermentation vats were death traps for millions of insects. By banning the color, the Guru effectively boycotted the industry."
     },
     {
@@ -388,7 +361,6 @@ export const rulesData = [
         modernView: "Eco-friendly Funerals",
         description: "Bishnois bury their dead instead of cremating them.",
         scientificBacking: "Cremation requires quintals of wood. In a wood-scarce desert, this is ecologically expensive.",
-        image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=2670&auto=format&fit=crop",
         deepAnalysis: "### Returning to the Earth\n\n**1. Saving Trees**\nThis is perhaps the most pragmatic ecological rule. If every death required a tree to be cut for a pyre, the desert would have been stripped bare centuries ago. Burial saves thousands of trees annually.\n\n**2. Soil Enrichment**\nThe body becomes food for the decomposers, completing the nutrient cycle. It is the final act of giving back to nature."
     },
     {
@@ -402,7 +374,6 @@ export const rulesData = [
         modernView: "Carbon Sequestration",
         description: "The most famous Bishnoi rule. It is forbidden to cut any green tree, especially the Khejri.",
         scientificBacking: "The Khejri tree is the 'King of the Desert'. It fixes nitrogen, prevents erosion, and provides fodder.",
-        image: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2674&auto=format&fit=crop",
         deepAnalysis: "### The Theology of the Tree: Rule 29\n\n**1. The Keystone Species**\nProhibiting the cutting of green trees was not a sentimental rule; it was a survival strategy. The *Prosopis cineraria* (Khejri) creates a microclimate under its canopy that allows crops to grow even in drought. It is a \"nurse tree.\"\n\n**2. Carbon Coding**\nCenturies before the term \"Climate Change\" was coined, Guru Jambheshwar codified carbon sequestration. Every mature Khejri tree protected by a Bishnoi is a carbon sink.\n\n**3. The Ultimate Test**\nThis rule is what led to the Khejarli Massacre. It is the only religious rule in the world for which 363 people voluntarily gave up their lives. It elevated the tree from a resource to a deity."
     }
 ];
