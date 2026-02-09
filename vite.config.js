@@ -19,25 +19,12 @@ export default defineConfig({
     })
   ],
   build: {
-
-    // Chunk size warning limit
-    chunkSizeWarningLimit: 1000,
-    // Manual chunking to split code
+    outDir: 'dist',
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            // Split heavy libraries into their own chunks
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
-              return 'vendor-react';
-            }
-            if (id.includes('framer-motion')) {
-              return 'vendor-framer';
-            }
-            if (id.includes('leaflet') || id.includes('react-leaflet')) {
-              return 'vendor-maps';
-            }
-            // Default vendor chunk
             return 'vendor';
           }
         },
