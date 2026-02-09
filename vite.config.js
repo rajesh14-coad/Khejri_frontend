@@ -19,14 +19,7 @@ export default defineConfig({
     })
   ],
   build: {
-    // Minification options
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console logs in production
-        drop_debugger: true,
-      },
-    },
+
     // Chunk size warning limit
     chunkSizeWarningLimit: 1000,
     // Manual chunking to split code
