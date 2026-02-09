@@ -10,18 +10,18 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex items-center space-x-2 bg-nature-light/50 rounded-full px-3 py-1 border border-brand-neon">
-            <Globe className="w-4 h-4 text-nature-dark" />
+        <div className="flex items-center space-x-2 bg-black/80 backdrop-blur-sm rounded-full px-4 py-1.5 border border-brand-neon/50 shadow-[0_0_15px_rgba(76,213,122,0.15)]">
+            <Globe className="w-4 h-4 text-brand-neon animate-pulse" />
             <button
                 onClick={() => changeLanguage('en')}
-                className={`text-xs font-bold transition ${i18n.language === 'en' ? 'text-nature-green underline' : 'text-gray-500 hover:text-nature-dark'}`}
+                className={`text-xs font-bold tracking-wider transition-all duration-300 ${i18n.language === 'en' ? 'text-brand-neon underline decoration-2 underline-offset-4 scale-105' : 'text-white/90 hover:text-brand-neon'}`}
             >
                 EN
             </button>
-            <span className="text-gray-300 text-xs">|</span>
+            <span className="text-white/20 text-xs">|</span>
             <button
                 onClick={() => changeLanguage('hi')}
-                className={`text-xs font-bold transition ${i18n.language === 'hi' ? 'text-nature-green underline' : 'text-gray-500 hover:text-nature-dark'}`}
+                className={`text-xs font-bold tracking-wider transition-all duration-300 ${i18n.language === 'hi' ? 'text-brand-neon underline decoration-2 underline-offset-4 scale-105' : 'text-white/90 hover:text-brand-neon'}`}
             >
                 हिन्दी
             </button>

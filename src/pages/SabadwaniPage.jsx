@@ -12,13 +12,30 @@ const SabadwaniPage = () => {
 
     const [searchTerm, setSearchTerm] = useState("");
 
-    // Updated Search: Ab ye Hindi aur English dono meanings mein search karega
-    const filteredSabads = sabadsData.filter(sabad =>
-        sabad.number.toString().includes(searchTerm) ||
-        sabad.original.includes(searchTerm) ||
-        (sabad.meaning_hi && sabad.meaning_hi.includes(searchTerm)) ||
-        (sabad.meaning_en && sabad.meaning_en.toLowerCase().includes(searchTerm.toLowerCase()))
-    );
+    // Helper to safely extract meaning text, handling both Strings and Arrays of Objects
+    const getMeaningText = (content) => {
+        if (!content) return "";
+        if (typeof content === 'string') return content;
+        if (Array.isArray(content)) {
+            // Join all 'meaning' fields from the array objects
+            return content.map(item => item.meaning || "").join(" ");
+        }
+        return "";
+    };
+
+    // Updated Search: Uses the helper to search effectively in both string and array formats
+    const filteredSabads = sabadsData.filter(sabad => {
+        const lowerTerm = searchTerm.toLowerCase();
+        const meaningHi = getMeaningText(sabad.meaning_hi).toLowerCase();
+        const meaningEn = getMeaningText(sabad.meaning_en).toLowerCase();
+
+        return (
+            sabad.number.toString().includes(lowerTerm) ||
+            sabad.original.toLowerCase().includes(lowerTerm) ||
+            meaningHi.includes(lowerTerm) ||
+            meaningEn.includes(lowerTerm)
+        );
+    });
 
     return (
         <div className="min-h-screen pb-20">
@@ -84,7 +101,7 @@ const SabadwaniPage = () => {
                                 {/* TRANSLATED PREVIEW */}
                                 <div className="border-t border-white/10 pt-4 mt-auto">
                                     <p className="text-sm text-gray-300 line-clamp-3 mb-3 font-light">
-                                        {isHindi ? sabad.meaning_hi : sabad.meaning_en}
+                                        {getMeaningText(isHindi ? sabad.meaning_hi : sabad.meaning_en)}
                                     </p>
                                     <div className="flex items-center text-white/80 font-bold text-sm group-hover:translate-x-1 transition-transform group-hover:text-white">
                                         {isHindi ? "पूर्ण अर्थ पढ़ें" : "Read Full Analysis"}

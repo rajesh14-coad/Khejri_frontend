@@ -235,8 +235,10 @@ const Navbar = () => {
                         </Link>
 
                         <Link to="/movements/bikaner-2026" className={`relative flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 ${location.pathname === '/movements/bikaner-2026' ? 'text-brand-neon scale-110' : 'text-gray-400 hover:text-gray-200'}`}>
-                            {/* Live Pulse */}
-                            <div className="absolute top-1 right-2 w-2 h-2 bg-brand-neon rounded-full animate-ping"></div>
+                            {/* Live Pulse - Hide when on the page */}
+                            {location.pathname !== '/movements/bikaner-2026' && (
+                                <div className="absolute top-1 right-2 w-2 h-2 bg-brand-neon rounded-full animate-ping"></div>
+                            )}
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mb-1"><path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6Z" /><path d="M12 13v9" /><path d="M12 21v-8" /></svg>
                             <span className="text-[10px] font-bold uppercase tracking-wider scale-90">Andolan</span>
                         </Link>

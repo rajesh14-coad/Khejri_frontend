@@ -11,6 +11,7 @@ const NewsPage = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [featuredNews, setFeaturedNews] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [showFilters, setShowFilters] = useState(false);
 
     useEffect(() => {
         fetchNews();
@@ -124,30 +125,54 @@ const NewsPage = () => {
                 )}
 
                 {/* Category Filter */}
-                <div className="bg-black/40 backdrop-blur-xl rounded-2xl shadow-lg p-6 mb-8 border border-white/10">
-                    <div className="flex items-center gap-4 flex-wrap">
-                        <Filter className="w-5 h-5 text-brand-neon" />
-                        <button
-                            onClick={() => setSelectedCategory('all')}
-                            className={`px-4 py-2 rounded-full font-medium transition-all ${selectedCategory === 'all'
-                                ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40'
-                                : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
-                                }`}
-                        >
-                            All News ({news.length})
-                        </button>
-                        {categories.map(category => (
+                {/* Toggleable Category Filter */}
+                <div className="mb-8 relative z-20">
+                    <button
+                        onClick={() => setShowFilters(!showFilters)}
+                        className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all duration-300 border ${showFilters
+                                ? 'bg-brand-neon text-black border-brand-neon shadow-[0_0_20px_rgba(74,222,128,0.4)]'
+                                : 'bg-black/40 text-gray-200 border-white/10 hover:bg-white/10 hover:border-brand-neon/50'
+                            }`}
+                    >
+                        <Filter className={`w-5 h-5 transition-transform duration-300 ${showFilters ? 'rotate-180' : ''}`} />
+                        <span>Filter News</span>
+                        {selectedCategory !== 'all' && (
+                            <span className="ml-2 bg-black text-brand-neon px-2 py-0.5 rounded-full text-xs font-bold border border-brand-neon/30">
+                                1 Active
+                            </span>
+                        )}
+                    </button>
+
+                    <div
+                        className={`overflow-hidden transition-all duration-500 ease-in-out ${showFilters ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+                            }`}
+                    >
+                        <div className="bg-black/60 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/10 flex items-center gap-4 flex-wrap animate-fade-in relative">
+                            {/* Decorative glow */}
+                            <div className="absolute -top-10 -left-10 w-32 h-32 bg-brand-neon/10 rounded-full blur-3xl pointer-events-none"></div>
+
                             <button
-                                key={category}
-                                onClick={() => setSelectedCategory(category)}
-                                className={`px-4 py-2 rounded-full font-medium transition-all ${selectedCategory === category
-                                    ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40'
-                                    : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
+                                onClick={() => { setSelectedCategory('all'); setShowFilters(false); }}
+                                className={`px-4 py-2 rounded-full font-medium transition-all relative z-10 ${selectedCategory === 'all'
+                                    ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40 transform scale-105'
+                                    : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10 hover:border-brand-neon/30'
                                     }`}
                             >
-                                {category} ({news.filter(n => n.category === category).length})
+                                All News ({news.length})
                             </button>
-                        ))}
+                            {categories.map(category => (
+                                <button
+                                    key={category}
+                                    onClick={() => { setSelectedCategory(category); setShowFilters(false); }}
+                                    className={`px-4 py-2 rounded-full font-medium transition-all relative z-10 ${selectedCategory === category
+                                        ? 'bg-brand-neon text-black font-bold shadow-lg shadow-brand-neon/40 transform scale-105'
+                                        : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10 hover:border-brand-neon/30'
+                                        }`}
+                                >
+                                    {category} ({news.filter(n => n.category === category).length})
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

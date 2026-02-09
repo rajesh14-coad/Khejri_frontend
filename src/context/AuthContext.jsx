@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     // Axios config
     // We need to set credentials: true globally or per request
     // Better to set default base url
-    axios.defaults.baseURL = 'http://localhost:5000';
+    axios.defaults.baseURL = 'http://localhost:5001';
     axios.defaults.withCredentials = true;
 
     useEffect(() => {

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { sabadsData } from '../data/sabadsData';
 import ReactMarkdown from 'react-markdown';
-import { ArrowLeft, ArrowRight, Quote, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Quote, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const SabadDetailPage = () => {
-    // --- LANGUAGE LOGIC ---
     const { currentLanguage } = useLanguage();
     const isHindi = currentLanguage === 'hi';
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const { id } = useParams();
     // Convert id to number for safe comparison if your IDs are numbers in data
@@ -83,62 +83,109 @@ const SabadDetailPage = () => {
                         </h2>
                     </div>
 
-                    {/* Translation & Meaning */}
-                    <div className="space-y-8 md:space-y-10">
-                        <div>
-                            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-[0.15em] mb-3 md:mb-4 border-l-2 border-brand-neon pl-3">
-                                {isHindi ? "भावार्थ" : "Meaning"}
-                            </h3>
-                            <p className="text-base md:text-xl text-gray-200 leading-loose font-serif">
-                                {displayMeaning}
-                            </p>
-                        </div>
-
-                        {/* Analysis Section */}
-                        {displayAnalysis && (
-                            <div className="mt-6 md:mt-8 bg-brand-neon/5 rounded-2xl p-6 md:p-8 border border-brand-neon/10">
-                                <div className="flex items-center mb-3 md:mb-4">
-                                    <Sparkles className="w-5 h-5 text-brand-neon mr-3" />
-                                    <h3 className="text-base md:text-lg font-bold font-serif text-white">
-                                        {isHindi ? "आध्यात्मिक विश्लेषण" : "Spiritual Analysis"}
-                                    </h3>
-                                </div>
-                                <div className="prose prose-invert prose-stone max-w-none prose-p:text-gray-300 prose-headings:font-serif text-sm md:text-base">
-                                    <ReactMarkdown>{displayAnalysis}</ReactMarkdown>
-                                </div>
-                            </div>
+                    {/* Show/Hide Details Button */}
+                    <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className="w-full py-3 mb-8 bg-white/10 hover:bg-white/20 text-brand-neon font-bold tracking-widest uppercase text-sm rounded-xl border border-white/10 transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer"
+                    >
+                        {isExpanded ? (
+                            <>
+                                {isHindi ? "कम विवरण देखें" : "Hide Details"}
+                                <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+                            </>
+                        ) : (
+                            <>
+                                {isHindi ? "और विवरण देखें" : "Show Details"}
+                                <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                            </>
                         )}
-                    </div>
+                    </button>
+
+                    {/* Translation & Meaning */}
+                    {isExpanded && (
+                        <div className="space-y-8 md:space-y-10 animate-fade-in">
+                            <div>
+                                <h3 className="text-xs font-bold text-gray-400 uppercase tracking-[0.15em] mb-3 md:mb-4 border-l-2 border-brand-neon pl-3">
+                                    {isHindi ? "भावार्थ" : "Meaning"}
+                                </h3>
+                                {Array.isArray(displayMeaning) ? (
+                                    <div className="space-y-6">
+                                        {displayMeaning.map((item, index) => (
+                                            <div key={index} className="border-b border-white/10 pb-4 last:border-0 last:pb-0">
+                                                <p className="font-serif text-brand-neon font-bold mb-2 text-lg">
+                                                    <span className="text-white/60 text-sm font-sans uppercase tracking-wider mr-2">{isHindi ? "मूल:" : "Original:"}</span>
+                                                    {item.original}
+                                                </p>
+                                                <p className="text-gray-200 text-base md:text-lg leading-relaxed font-serif pl-4 border-l-2 border-white/10">
+                                                    <span className="text-brand-neon/60 text-sm font-sans uppercase tracking-wider mr-2">{isHindi ? "भावार्थ:" : "Meaning:"}</span>
+                                                    {item.meaning}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className="text-base md:text-xl text-gray-200 leading-loose font-serif prose prose-invert max-w-none">
+                                        <ReactMarkdown>{displayMeaning}</ReactMarkdown>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Analysis Section */}
+                            {displayAnalysis && (
+                                <div className="mt-6 md:mt-8 bg-brand-neon/5 rounded-2xl p-6 md:p-8 border border-brand-neon/10">
+                                    <div className="flex items-center mb-3 md:mb-4">
+                                        <Sparkles className="w-5 h-5 text-brand-neon mr-3" />
+                                        <h3 className="text-base md:text-lg font-bold font-serif text-white">
+                                            {isHindi ? "आध्यात्मिक विश्लेषण" : "Spiritual Analysis"}
+                                        </h3>
+                                    </div>
+                                    <div className="prose prose-invert prose-stone max-w-none prose-p:text-gray-300 prose-headings:font-serif text-sm md:text-base">
+                                        <ReactMarkdown>{displayAnalysis}</ReactMarkdown>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
                     {/* Navigation Footer */}
-                    <div className="flex justify-between items-center pt-8 mt-8 md:mt-12 border-t border-white/10">
+                    <div className="flex justify-between items-center pt-6 mt-6 md:pt-8 md:mt-12 border-t border-white/10 gap-3 md:gap-4">
                         {prevSabad ? (
-                            <Link to={`/sabadwani/${prevSabad.id}`} className="group flex items-center text-gray-400 hover:text-brand-neon transition">
-                                <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition" />
-                                <div className="text-left">
-                                    <span className="block text-[10px] md:text-xs uppercase tracking-wide opacity-50">
+                            <Link
+                                to={`/sabadwani/${prevSabad.id}`}
+                                className="group relative flex items-center gap-2 md:gap-4 px-3 py-2 md:px-5 md:py-3 rounded-lg md:rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] active:scale-95 active:border-[#4ade80] active:shadow-[0_0_15px_#4ade80] flex-1 md:flex-none max-w-[48%]"
+                            >
+                                <div className="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/10 border border-white/10 group-hover:bg-[#4ade80] group-hover:text-black transition-all duration-300 flex-shrink-0">
+                                    <ArrowLeft className="w-3 h-3 md:w-4 md:h-4" />
+                                </div>
+                                <div className="flex flex-col items-start overflow-hidden">
+                                    <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-gray-400 font-medium group-hover:text-white transition-colors truncate w-full">
                                         {isHindi ? "पिछला" : "Previous"}
                                     </span>
-                                    <span className="font-bold text-sm md:text-base text-gray-200 group-hover:text-white">
+                                    <span className="text-sm md:text-lg font-bold text-white group-hover:text-[#4ade80] transition-colors truncate w-full">
                                         #{prevSabad.number}
                                     </span>
                                 </div>
                             </Link>
-                        ) : <div></div>}
+                        ) : <div className="flex-1 md:flex-none"></div>}
 
                         {nextSabad ? (
-                            <Link to={`/sabadwani/${nextSabad.id}`} className="group flex items-center text-gray-400 hover:text-brand-neon transition text-right">
-                                <div className="text-right">
-                                    <span className="block text-[10px] md:text-xs uppercase tracking-wide opacity-50">
+                            <Link
+                                to={`/sabadwani/${nextSabad.id}`}
+                                className="group relative flex items-center justify-end gap-2 md:gap-4 px-3 py-2 md:px-5 md:py-3 rounded-lg md:rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] active:scale-95 active:border-[#4ade80] active:border-opacity-100 active:shadow-[0_0_15px_#4ade80] flex-1 md:flex-none text-right max-w-[48%]"
+                            >
+                                <div className="flex flex-col items-end overflow-hidden">
+                                    <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-gray-400 font-medium group-hover:text-white transition-colors truncate w-full">
                                         {isHindi ? "अगला" : "Next"}
                                     </span>
-                                    <span className="font-bold text-sm md:text-base text-gray-200 group-hover:text-white">
+                                    <span className="text-sm md:text-lg font-bold text-white group-hover:text-[#4ade80] transition-colors truncate w-full">
                                         #{nextSabad.number}
                                     </span>
                                 </div>
-                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition" />
+                                <div className="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/10 border border-white/10 group-hover:bg-[#4ade80] group-hover:text-black transition-all duration-300 flex-shrink-0">
+                                    <ArrowRight className="w-3 h-3 md:w-4 md:h-4" />
+                                </div>
                             </Link>
-                        ) : <div></div>}
+                        ) : <div className="flex-1 md:flex-none"></div>}
                     </div>
 
                 </div>
