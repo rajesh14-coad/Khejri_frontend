@@ -1,5 +1,5 @@
-
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
@@ -44,6 +44,14 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 
 function App() {
+
+  useEffect(() => {
+    // Check if GA has already been initialized to prevent multiple initializations
+    if (!window.GA_INITIALIZED) {
+      ReactGA.initialize("G-NLPGD37DRE");
+      window.GA_INITIALIZED = true;
+    }
+  }, []);
   return (
     <Layout>
       <ScrollToTop />
