@@ -13,9 +13,13 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs md:text-sm text-gray-400">
+                    <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
+                    <span className="hidden md:inline">•</span>
                     <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                     <span className="hidden md:inline">•</span>
                     <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
+                    <span className="hidden md:inline">•</span>
+                    <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
                     <span className="hidden md:inline">•</span>
                     <Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link>
                 </div>

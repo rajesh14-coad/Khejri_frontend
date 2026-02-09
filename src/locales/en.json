@@ -450,5 +450,71 @@
         "loading": "Loading...",
         "readMore": "Read Story",
         "features": "Featured Stories"
+    },
+    "aboutPage": {
+        "since": "Since 1485 AD",
+        "title": "The Guardians of Nature",
+        "subtitle": "The Guardians of Nature",
+        "treeCard": {
+            "title": "The Sacred Khejri",
+            "desc": "More than just a tree, it is the lifeline of the desert and a symbol of our faith. \"Sir Santey Runkh Rahe To Bhi Sasto Jaan.\""
+        },
+        "quote": {
+            "text": "\"Jeev Daya Palani, Runkh Lila Nahi Ghave.\"",
+            "meaning": "(Protect all living beings, do not cut green trees.)",
+            "author": "— Guru Jambheshwar Bhagwan"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "p1": "Khejri Bachao us a digital movement inspired by the 550-year-old legacy of the Bishnoi Community. Founded on the 29 principles of Guru Jambheshwar Bhagwan, the community has been at the forefront of wildlife and tree protection for centuries.",
+            "p2": "Our mission is to digitize the sacred 'Sabad Vani' and document the modern struggle against industrial expansion in our forests. This platform is a tribute to the 363 martyrs of Khejarli who gave their lives to save a tree. It serves as a bridge between ancient ecological wisdom and modern environmental activism."
+        },
+        "cta": "Join the Community"
+    },
+    "contactPage": {
+        "title": "Contact Us",
+        "email": "Email",
+        "location": "Location",
+        "locationValue": "Sanchore, Rajasthan, India",
+        "note": "Note",
+        "noteText": "We appreciate your feedback and inquiries related to the Khejri Bachao movement and the digital museum.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "placeholderName": "Your Name",
+            "placeholderEmail": "your@email.com",
+            "placeholderMessage": "Write your message here...",
+            "submit": "Send Message"
+        }
+    },
+    "disclaimerPage": {
+        "title": "Disclaimer",
+        "eduTitle": "Educational & Spiritual Purpose",
+        "eduText": "The content provided on this website, particularly the \"Sabad Vani\" analysis, is for educational and spiritual purposes only. It is based on extensive research and traditional understanding.",
+        "accTitle": "Accuracy of Content",
+        "accText": "While we strive for 100% accuracy and originality in our texts and translations, we are not responsible for any accidental inaccuracies or interpretations that may differ from individual beliefs.",
+        "indTitle": "Independent Initiative",
+        "indText": "This is an independent initiative to support the Khejri Bachao movement and preserve the cultural heritage of the Bishnoi community. We are not officially affiliated with any specific religious institution but work in solidarity with the community's values."
+    },
+    "privacyPage": {
+        "title": "Privacy Policy",
+        "sec1Title": "We Respect User Privacy",
+        "sec1Text": "Your privacy is of utmost importance to us. We are committed to transparency and respect for your personal information while you browse our website.",
+        "sec2Title": "Google Analytics Usage",
+        "sec2Text": "We use Google Analytics (Tracking ID: G-NLPGD37DRE) to analyze user behavior, understand traffic sources, and improve our website's performance. This helps us tailor our content to better serve the community.",
+        "sec3Title": "No Sale of Personal Data",
+        "sec3Text": "We do not, under any circumstances, sell, trade, or rent your personal identification information to third parties. Your trust is our foundation.",
+        "sec4Title": "Cookies & AdSense",
+        "sec4Text": "We may use cookies to personalize content and ads via Google AdSense. These cookies help us serve relevant advertisements based on your visits to this and other websites. You can choose to disable cookies through your browser settings."
+    },
+    "termsPage": {
+        "title": "Terms & Conditions",
+        "sec1Title": "Non-Commercial Usage",
+        "sec1Text": "The content provided on this website, especially the 'Sabad Vani' analysis and translations, is for personal and educational use only. Users are strictly prohibited from copying, distributing, or using this content for any commercial purposes without explicit written permission.",
+        "sec2Title": "Religious & Environmental Sensitivity",
+        "sec2Text": "This platform respects the deep religious and environmental sentiments associated with the Bishnoi community and the Khejri tree. We expect all users to engage with the content respectfully and avoid using it in contexts that might offend community values.",
+        "sec3Title": "Warranty Disclaimer",
+        "sec3Text": "This website is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the site or the information, content, or materials included on it."
     }
 }

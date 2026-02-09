@@ -1,40 +1,76 @@
+
 import React from 'react';
 import SEO from '../components/SEO';
+import { OctagonAlert, FileText, Globe } from 'lucide-react';
 
 const Terms = () => {
   return (
-    <div className="min-h-screen py-12 px-4 bg-black/50">
-      <SEO title="Terms & Conditions" />
-      <div className="max-w-4xl mx-auto bg-black/60 backdrop-blur-xl rounded-2xl p-6 md:p-8 shadow-2xl text-white border border-white/10">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6 text-brand-neon">Terms and Conditions</h1>
+    <div className="min-h-screen bg-neutral-900 text-gray-100 py-16 px-4 md:px-8 font-sans">
+      <SEO
+        title="Terms & Conditions - नियम और शर्तें"
+        description="Terms of Use for Khejri Bachao. Please read our guidelines on content usage, sensitivity, and liabilities."
+      />
 
-        <div className="space-y-6 text-gray-200 leading-relaxed">
-          <p>
-            Welcome to Khejri Bachao! These terms and conditions outline the rules and regulations for the use of Khejri Bachao's Website.
-          </p>
-          <p>
-            By accessing this website we assume you accept these terms and conditions. Do not continue to use Khejri Bachao if you do not agree to take all of the terms and conditions stated on this page.
-          </p>
+      <div className="max-w-4xl mx-auto">
+        <header className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-neon mb-4">
+            Terms & Conditions
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-gray-400 font-hindi">
+            नियम और शर्तें
+          </h2>
+        </header>
 
-          <h2 className="text-xl font-bold text-white mt-4">Educational and Informational Purpose</h2>
-          <p>
-            The content provided on this website is for educational and informational purposes regarding the Khejri movement, environmental protection, and related historical events. While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.
-          </p>
+        <div className="space-y-12 bg-neutral-800/40 p-8 md:p-12 rounded-2xl border border-white/10 backdrop-blur-md">
 
-          <h2 className="text-xl font-bold text-white mt-4">External Links Disclaimer</h2>
-          <p>
-            Our website may contain links to external websites that are not provided or maintained by or in any way affiliated with Khejri Bachao. Please note that the Khejri Bachao does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. We are not responsible for the content or practices of any linked third-party sites.
-          </p>
+          {/* Content Usage */}
+          <div className="flex gap-6 items-start">
+            <div className="flex-shrink-0 mt-1">
+              <FileText className="w-8 h-8 text-brand-saffron" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Non-Commercial Usage</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                The content provided on this website, especially the <strong>'Sabad Vani'</strong> analysis and translations, is for personal and educational use only. Users are strictly prohibited from copying, distributing, or using this content for any commercial purposes without explicit written permission.
+              </p>
+              <p className="text-gray-400 font-hindi text-sm italic border-l-4 border-brand-saffron pl-4">
+                इस वेबसाइट पर दी गई सामग्री, विशेष रूप से <strong>'सब्द वाणी'</strong> विश्लेषण, केवल व्यक्तिगत और शैक्षिक उपयोग के लिए है। किसी भी व्यावसायिक उद्देश्य के लिए इस सामग्री का उपयोग सख्त वर्जित है।
+              </p>
+            </div>
+          </div>
 
-          <h2 className="text-xl font-bold text-white mt-4">User Content</h2>
-          <p>
-            Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website (e.g., comments, community posts). Khejri Bachao does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Khejri Bachao,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions.
-          </p>
+          {/* Sensitivity */}
+          <div className="flex gap-6 items-start">
+            <div className="flex-shrink-0 mt-1">
+              <Globe className="w-8 h-8 text-brand-olive" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Religious & Environmental Sensitivity</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                This platform respects the deep religious and environmental sentiments associated with the Bishnoi community and the Khejri tree. We expect all users to engage with the content respectfully and avoid using it in contexts that might offend community values.
+              </p>
+              <p className="text-gray-400 font-hindi text-sm italic border-l-4 border-brand-olive pl-4">
+                हम सभी उपयोगकर्ताओं से अपेक्षा करते हैं कि वे सामग्री के साथ सम्मानपूर्वक जुड़ें और इसका उपयोग ऐसे संदर्भों में करने से बचें जो समुदाय की भावनाओं को ठेस पहुंचा सकते हैं।
+              </p>
+            </div>
+          </div>
 
-          <h2 className="text-xl font-bold text-white mt-4">License</h2>
-          <p>
-            Unless otherwise stated, Khejri Bachao and/or its licensors own the intellectual property rights for all material on Khejri Bachao. All intellectual property rights are reserved. You may access this from Khejri Bachao for your own personal use subjected to restrictions set in these terms and conditions.
-          </p>
+          {/* Warranty */}
+          <div className="flex gap-6 items-start">
+            <div className="flex-shrink-0 mt-1">
+              <OctagonAlert className="w-8 h-8 text-red-500" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Warranty Disclaimer</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                This website is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the site or the information, content, or materials included on it.
+              </p>
+              <p className="text-gray-400 font-hindi text-sm italic border-l-4 border-red-500 pl-4">
+                यह वेबसाइट "जैसी है" और "जैसी उपलब्ध है" के आधार पर प्रदान की जाती है। हम साइट के संचालन या इसमें शामिल जानकारी या सामग्री के संबंध में किसी भी प्रकार की कोई वारंटी नहीं देते हैं।
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

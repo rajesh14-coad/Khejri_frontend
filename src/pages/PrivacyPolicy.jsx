@@ -1,40 +1,100 @@
+
 import React from 'react';
 import SEO from '../components/SEO';
+import { Shield, Eye, Database, Lock } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen py-12 px-4 bg-black/50">
-      <SEO title="Privacy Policy" />
-      <div className="max-w-4xl mx-auto bg-black/60 backdrop-blur-xl rounded-2xl p-6 md:p-8 shadow-2xl text-white border border-white/10">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6 text-brand-neon">Privacy Policy</h1>
+    <div className="min-h-screen bg-neutral-900 text-gray-100 py-16 px-4 md:px-8 font-sans">
+      <SEO
+        title="Privacy Policy - गोपनीयता नीति"
+        description="Our privacy commitment. We respect user privacy and adhere to transparent data practices using Google Analytics and AdSense."
+      />
 
-        <div className="space-y-6 text-gray-200 leading-relaxed">
-          <p>
-            At Khejri Bachao, accessible from https://khejribachao.in, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Khejri Bachao and how we use it.
-          </p>
+      <div className="max-w-4xl mx-auto">
+        <header className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-neon mb-4">
+            Privacy Policy
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-gray-400 font-hindi">
+            गोपनीयता नीति
+          </h2>
+        </header>
 
-          <h2 className="text-xl font-bold text-white mt-4">Log Files</h2>
-          <p>
-            Khejri Bachao follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
-          </p>
+        <div className="space-y-8 bg-neutral-800/40 p-8 rounded-2xl border border-white/10 backdrop-blur-md">
 
-          <h2 className="text-xl font-bold text-white mt-4">Cookies and Web Beacons</h2>
-          <p>
-            Like any other website, Khejri Bachao uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
-          </p>
+          {/* User Privacy */}
+          <section className="flex flex-col md:flex-row gap-6 border-b border-white/10 pb-8 last:border-0 last:pb-0">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400">
+                <Shield className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">We Respect User Privacy</h3>
+              <p className="text-gray-300 mb-2">
+                Your privacy is of utmost importance to us. We are committed to transparency and respect for your personal information while you browse our website.
+              </p>
+              <p className="text-gray-400 font-hindi italic text-sm">
+                आपकी गोपनीयता हमारे लिए अत्यंत महत्वपूर्ण है। हम आपकी व्यक्तिगत जानकारी के प्रति पारदर्शिता और सम्मान के लिए प्रतिबद्ध हैं।
+              </p>
+            </div>
+          </section>
 
-          <h2 className="text-xl font-bold text-white mt-4">Google DoubleClick DART Cookie</h2>
-          <p>
-            Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-brand-neon hover:underline">https://policies.google.com/technologies/ads</a>
-          </p>
-          <p className="mt-2 text-sm bg-white/5 p-4 rounded border-l-4 border-brand-neon">
-            <strong>Note:</strong> Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.
-          </p>
+          {/* Google Analytics */}
+          <section className="flex flex-col md:flex-row gap-6 border-b border-white/10 pb-8 last:border-0 last:pb-0">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">
+                <Eye className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Google Analytics Usage</h3>
+              <p className="text-gray-300 mb-2">
+                We use <strong>Google Analytics (Tracking ID: G-NLPGD37DRE)</strong> to analyze user behavior, understand traffic sources, and improve our website's performance. This helps us tailor our content to better serve the community.
+              </p>
+              <p className="text-gray-400 font-hindi italic text-sm">
+                वेबसाइट के प्रदर्शन को बेहतर बनाने और उपयोगकर्ता व्यवहार का अध्ययन करने के लिए हम Google Analytics (ID: G-NLPGD37DRE) का उपयोग करते हैं।
+              </p>
+            </div>
+          </section>
 
-          <h2 className="text-xl font-bold text-white mt-4">Consent</h2>
-          <p>
-            By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.
-          </p>
+          {/* No Selling Data */}
+          <section className="flex flex-col md:flex-row gap-6 border-b border-white/10 pb-8 last:border-0 last:pb-0">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center text-red-400">
+                <Lock className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">No Sale of Personal Data</h3>
+              <p className="text-gray-300 mb-2">
+                We do not, under any circumstances, sell, trade, or rent your personal identification information to third parties. Your trust is our foundation.
+              </p>
+              <p className="text-gray-400 font-hindi italic text-sm">
+                हम किसी भी परिस्थिति में आपकी व्यक्तिगत जानकारी को तीसरे पक्ष को नहीं बेचते हैं। आपका विश्वास ही हमारी नींव है।
+              </p>
+            </div>
+          </section>
+
+          {/* AdSense Cookies */}
+          <section className="flex flex-col md:flex-row gap-6 border-b border-white/10 pb-8 last:border-0 last:pb-0">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center text-yellow-400">
+                <Database className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">Cookies & AdSense</h3>
+              <p className="text-gray-300 mb-2">
+                We may use cookies to personalize content and ads via Google AdSense. These cookies help us serve relevant advertisements based on your visits to this and other websites. You can choose to disable cookies through your browser settings.
+              </p>
+              <p className="text-gray-400 font-hindi italic text-sm">
+                हम विज्ञापनों और सामग्री को वैयक्तिकृत करने के लिए कुकीज़ का उपयोग कर सकते हैं। आप अपनी ब्राउज़र सेटिंग के माध्यम से कुकीज़ को अक्षम करना चुन सकते हैं।
+              </p>
+            </div>
+          </section>
+
         </div>
       </div>
     </div>

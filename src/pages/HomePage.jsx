@@ -111,9 +111,10 @@ const HomePage = () => {
                     <div className="absolute inset-0 bg-black/30 z-10 mix-blend-multiply" />
                     <div className="absolute inset-0 bg-gradient-to-t from-nature-dark via-transparent to-black/20 z-10" />
                     <img
-                        src="/images/hero_desert.jpg"
+                        src="/images/hero_desert.webp"
                         alt="Khejri trees in Rajasthan Desert"
                         className="w-full h-full object-cover object-center"
+                        fetchPriority="high"
                     />
                 </motion.div>
 
@@ -285,6 +286,7 @@ const HomePage = () => {
                                         <img
                                             src="/images/guru_jambheshwar2.png"
                                             alt="Guru Jambheshwar"
+                                            loading="lazy"
                                             className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                                         />
                                     </div>
@@ -335,6 +337,7 @@ const HomePage = () => {
                                             <img
                                                 src={item.featuredImage}
                                                 alt={item.title}
+                                                loading="lazy"
                                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                             />
                                         ) : (
