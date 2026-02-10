@@ -6,7 +6,7 @@ import Footer from './Footer';
 const Layout = ({ children }) => {
     const location = useLocation();
     return (
-        <div className="flex flex-col min-h-screen relative">
+        <div className="flex flex-col min-h-screen relative pb-24 md:pb-0">
             {/* Global Background Wrapper */}
             <div className="fixed inset-0 -z-50 bg-[url('/images/khejri.png')] bg-no-repeat bg-cover bg-[center_top] md:bg-center md:bg-fixed w-full min-h-screen" />
 

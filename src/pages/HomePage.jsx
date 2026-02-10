@@ -400,7 +400,7 @@ const HomePage = () => {
                             </Link>
                         </div>
 
-                        <div className="bg-white/5 rounded-3xl p-2 border border-white/10 backdrop-blur-sm shadow-inner h-[300px] md:h-auto">
+                        <div className="bg-white/5 rounded-2xl p-2 border border-white/10 backdrop-blur-sm shadow-inner h-[300px] md:h-auto overflow-hidden w-full max-w-full">
                             <LazyLoadWrapper
                                 component={MapComponent}
                                 incidents={incidents}

@@ -10,7 +10,7 @@ const SEO = ({
     type = 'website',
     author = 'Khejri Guardian Team'
 }) => {
-    const siteTitle = "Khejri Guardian";
+    const siteTitle = "Khejri Bachao";
 
     // Compelling default description optimized for SEO
     const defaultDescription = "Official portal for Khejri Bachao. Learn about the 363 martyrs of Khejarli, the 29 rules of Bishnoi Panth, and the complete 120 Sabad Vani of Guru Jambheshwar.";
@@ -47,8 +47,8 @@ const SEO = ({
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Khejri Guardian",
-        "alternateName": "Khejri Bachao Andolan",
+        "name": "Khejri Bachao",
+        "alternateName": "Khejri Guardian",
         "url": siteUrl,
         "logo": `${siteUrl}/images/logo.png`,
         "description": defaultDescription,
@@ -64,7 +64,7 @@ const SEO = ({
         "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "General Inquiry",
-            "email": "contact@khejriguardian.com"
+            "email": "contact@khejribachao.com"
         }
     };
 
@@ -76,7 +76,7 @@ const SEO = ({
         "description": "Learn the 29 sacred rules established by Guru Jambheshwar in 1485 for environmental protection and spiritual living.",
         "provider": {
             "@type": "Organization",
-            "name": "Khejri Guardian",
+            "name": "Khejri Bachao",
             "url": siteUrl
         },
         "educationalLevel": "All Levels",
@@ -111,7 +111,7 @@ const SEO = ({
         "datePublished": "1485",
         "publisher": {
             "@type": "Organization",
-            "name": "Khejri Guardian"
+            "name": "Khejri Bachao"
         },
         "genre": "Religious Text"
     };
