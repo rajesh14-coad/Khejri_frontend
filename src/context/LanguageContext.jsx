@@ -10,7 +10,7 @@ export const useLanguage = () => {
 
 export const LanguageProvider = ({ children }) => {
   const { t, i18n } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'en');
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'hi');
 
   // Sync local state with i18n
   useEffect(() => {

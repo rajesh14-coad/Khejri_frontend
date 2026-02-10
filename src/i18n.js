@@ -20,8 +20,13 @@ i18n
                 translation: hi
             }
         },
-        fallbackLng: 'en',
+        lng: localStorage.getItem('i18nextLng') || 'hi', // Force Hindi if no language stored
+        fallbackLng: 'hi',
         debug: true,
+        detection: {
+            order: ['localStorage', 'cookie'],
+            caches: ['localStorage', 'cookie'],
+        },
 
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
