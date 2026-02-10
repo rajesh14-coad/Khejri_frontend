@@ -3,32 +3,79 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply text-gray-800 font-sans;
+  /* ========================================
+     1. BASIC SETUP (Restored to Original)
+     ======================================== */
+  html {
+    /* Smooth scrolling for anchor links */
+    scroll-behavior: smooth;
+    /* Makes text look sharper on Mobile screens */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Global Click Interaction - Pulse Glow */
+  body {
+    @apply text-gray-800 font-sans;
+    /* Prevents side-scrolling on mobile (Critical fix) */
+    overflow-x: hidden;
+  }
+
+  /* ========================================
+     2. YOUR BRANDING (Neon Glow)
+     ======================================== */
+  /* This is your original code for the green click effect */
   button:active,
   a:active,
   button:focus,
   a:focus {
     @apply shadow-[0_0_10px_#4cd57a] text-[#4cd57a] outline-none;
   }
+
+  /* ========================================
+     3. MOBILE OPTIMIZATIONS (The Speed Boosters)
+     ======================================== */
+  
+  /* Touch Optimization: Removes delay on taps */
+  button, a, input {
+    touch-action: manipulation;
+  }
+
+  /* Safe Padding: Ensures text doesn't stick to mobile edges */
+  .container, section {
+    @apply px-4 md:px-6; /* Simple & Clean: 16px on mobile, 24px on PC */
+  }
+
+  /* PERFORMANCE MAGIC:
+     This makes the 120 Sabad & 29 Rules pages load instantly 
+     by not rendering off-screen items. */
+  .long-list,
+  .sabad-list,
+  .rules-list,
+  .martyrs-list {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px; /* Estimated height to prevent scroll jump */
+  }
+  
+  /* Prevent layout shifts on images */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
+/* ========================================
+   4. ANIMATIONS (Your Original Code)
+   ======================================== */
 
 .leaflet-container {
   width: 100%;
   height: 100%;
+  z-index: 0; /* Fixes map overlapping menu */
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 .animate-marquee {
@@ -44,7 +91,6 @@
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -56,11 +102,6 @@
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

@@ -2,24 +2,59 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLPGD37DRE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-NLPGD37DRE');
-  </script>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khejri Guardian</title>
+  
+  <!-- Critical Inline CSS for Hero Section - Prevents Layout Shift -->
+  <style>
+    /* Critical styles for immediate hero rendering */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+    }
+    #root {
+      min-height: 100vh;
+    }
+    /* Prevent flash of unstyled content */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+    }
+  </style>
+
+  <!-- Preconnect to external domains for faster resource loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  
+  <!-- Optimized Font Loading with display=swap to prevent FOIT (Flash of Invisible Text) -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Deferred Google Analytics - Non-blocking -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-NLPGD37DRE"></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NLPGD37DRE');
+  </script>
 </head>
 
 <body>

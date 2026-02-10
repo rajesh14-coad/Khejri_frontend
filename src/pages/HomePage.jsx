@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import MapComponent from '../components/MapComponent';
+import LazyLoadWrapper from '../components/LazyLoadWrapper';
 import { ArrowRight, Leaf, BookOpen, Shield, History, MapPin, Feather, Wind } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -400,7 +401,11 @@ const HomePage = () => {
                         </div>
 
                         <div className="bg-white/5 rounded-3xl p-2 border border-white/10 backdrop-blur-sm shadow-inner h-[300px] md:h-auto">
-                            <MapComponent incidents={incidents} />
+                            <LazyLoadWrapper
+                                component={MapComponent}
+                                incidents={incidents}
+                                rootMargin="300px"
+                            />
                         </div>
                     </div>
                 </div>

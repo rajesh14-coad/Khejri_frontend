@@ -10,18 +10,24 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex items-center space-x-2 bg-black/80 backdrop-blur-sm rounded-full px-4 py-1.5 border border-brand-neon/50 shadow-[0_0_15px_rgba(76,213,122,0.15)]">
-            <Globe className="w-4 h-4 text-brand-neon animate-pulse" />
+        // Changes made: Reduced px-4 to px-3, py-1.5 to py-1, and space-x-2 to space-x-1.5 for compactness
+        <div className="flex items-center space-x-1.5 bg-black/60 backdrop-blur-md rounded-full px-2.5 py-0.5 border border-brand-neon/30 shadow-[0_0_10px_rgba(76,213,122,0.1)] hover:border-brand-neon/50 transition-all">
+            {/* Reduced icon size from w-4 to w-3.5 */}
+            <Globe className="w-3.5 h-3.5 text-brand-neon" />
+            
             <button
                 onClick={() => changeLanguage('en')}
-                className={`text-xs font-bold tracking-wider transition-all duration-300 ${i18n.language === 'en' ? 'text-brand-neon underline decoration-2 underline-offset-4 scale-105' : 'text-white/90 hover:text-brand-neon'}`}
+                // Removed large underlines, used color change for active state instead to save space
+                className={`text-[11px] font-bold tracking-wide transition-all ${i18n.language === 'en' ? 'text-brand-neon' : 'text-white/70 hover:text-white'}`}
             >
                 EN
             </button>
-            <span className="text-white/20 text-xs">|</span>
+            
+            <span className="text-white/20 text-[10px]">|</span>
+            
             <button
                 onClick={() => changeLanguage('hi')}
-                className={`text-xs font-bold tracking-wider transition-all duration-300 ${i18n.language === 'hi' ? 'text-brand-neon underline decoration-2 underline-offset-4 scale-105' : 'text-white/90 hover:text-brand-neon'}`}
+                className={`text-[11px] font-bold tracking-wide transition-all ${i18n.language === 'hi' ? 'text-brand-neon' : 'text-white/70 hover:text-white'}`}
             >
                 हिन्दी
             </button>
